@@ -13,30 +13,29 @@
     <body>
         <header>
             <h1>{{site.title}}</h1>
-            <nav class="horizontal-logo-nav">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/ismael-cesar-11927146" target="_blank" alt="Linkeding">
-                        <img src="assets/images/linkedin.png">
-                        </a>
-                    </li>
-                    <li><a href="http://lattes.cnpq.br/7125338940009959" target="_blank" alt="Currículo lattes">
-                        <img src="assets/images/lattes.png">
-                        </a>
-                    </li>
-                    <li><a href="https://www.researchgate.net/profile/Ismael_Araujo" target="_blank" alt="Research">
-                        <img src="assets/images/researchgate_logo_treatedt.png">
-                        </a>
-                    </li>
-                    <li><a href="https://github.com/IsmaelCesar" target="_blank" alt="Github">
-                        <img src="assets/images/github.png">
-                        </a>
-                    </li>
-                    <div class="float-breaker"></div>
-                </ul>
-                <h3 id="email">{{ site.email }}</h3>
-            </nav>
         </header>
-        <div id="cv-content">
+        <nav id="top_navbar" class="horizontal-logo-nav">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/ismael-cesar-11927146" target="_blank" alt="Linkeding">
+                    <img src="assets/images/linkedin.png">
+                    </a>
+                </li>
+                <li><a href="http://lattes.cnpq.br/7125338940009959" target="_blank" alt="Currículo lattes">
+                    <img src="assets/images/lattes.png">
+                    </a>
+                </li>
+                <li><a href="https://www.researchgate.net/profile/Ismael_Araujo" target="_blank" alt="Research">
+                    <img src="assets/images/researchgate_logo_treatedt.png">
+                    </a>
+                </li>
+                <li><a href="https://github.com/IsmaelCesar" target="_blank" alt="Github">
+                    <img src="assets/images/github.png">
+                    </a>
+                </li>
+                <div class="float-breaker"></div>
+            </ul>
+        </nav>
+        <div id="cv-content" class="content">
             <section class="cv-section">
                 
                 <h2 class="cv-section-title">Formation</h2>
@@ -113,7 +112,7 @@
         </div>
         <footer>
             <h1>{{site.title}}</h1>
-            <nav class="horizontal-logo-nav">
+            <nav class="horizontal-logo-nav footer-nav">
                 <ul>
                     <li>
                         <a href="https://www.linkedin.com/in/ismael-cesar-11927146" target="_blank" alt="Linkeding">
@@ -140,6 +139,22 @@
                 <h3 id="email">{{ site.email }}</h3>
             </nav>
         </footer>
+    <script type="text/javascript">
+        document.onscroll = function(){ make_sticky();}
+        
+        var navbar = document.getElementById("top_navbar");
 
+        var sticky = navbar.offsetTop;
+
+        function make_sticky(){
+            if(window.pageYOffset >= sticky){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+            
+        }
+    </script>
     </body>
 </html>
