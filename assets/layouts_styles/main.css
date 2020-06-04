@@ -96,6 +96,8 @@ footer h1{
     border-bottom: none;
 }
 
+
+/*Making the menu sticky*/
 .content{
     padding-top: 16px;
 }
@@ -111,8 +113,90 @@ footer h1{
     padding-top:60px; 
 }
 
-/*CV-Content*/
+/*Responsive Content*/
+@media(max-width:1200px){
+    .horizontal-logo-nav{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 
+    .horizontal-logo-nav .footer-nav{
+        border-top: 1px solid white;
+        border-bottom: none;
+    }
+
+    .horizontal-logo-nav img{
+        width: 25px;
+    }   
+}
+
+
+@media(max-width: 768px){
+    .horizontal-logo-nav{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .horizontal-logo-nav .footer-nav{
+        border-top: 2px solid white;
+        border-bottom: none;
+    }
+
+    .horizontal-logo-nav img{
+        width: 50px;
+    }
+
+    .cv-section-title{
+        font-size: 0.2em;
+    }
+
+    .cv-section h3{
+        font-size: 1em;
+    }
+
+    .cv-section p{
+        font-size: 0.5em;
+    }
+
+    .cv-section section{
+        border-top:2px solid blue;
+    }
+}
+
+@media(max-width:370px){   
+    
+    .horizontal-logo-nav{
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+
+    .horizontal-logo-nav .footer-nav{
+        border-top: 2px solid white;
+        border-bottom: none;
+    }
+
+    .horizontal-logo-nav img{
+        width: 50px;
+    }
+
+    .cv-section-title{
+        font-size: 4.5em;
+    }
+
+    .cv-section h3{
+        font-size: 2.5em;
+    }
+
+    .cv-section p{
+        font-size: 2em;
+    }
+
+    .cv-section section{
+        border-top:2px solid blue;
+    }
+}
+
+/*CV-content*/
 .cv-section{
     border: 1px solid purple;
     border-radius: 20px;
@@ -157,3 +241,4 @@ footer{
     padding-top:50px;
     padding-bottom: 50px;
 }
+
