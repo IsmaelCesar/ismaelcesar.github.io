@@ -43,6 +43,7 @@ footer h1{
 #email{
     font-family:'Advent Pro', sans-serif;
     font-weight: normal;    
+    margin: 10px;
 }
 
 /*General elements of navigation*/
@@ -54,14 +55,15 @@ footer h1{
 
 .horizontal-logo-nav{
     text-align: center;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .horizontal-logo-nav ul{
     list-style: none;
     display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .horizontal-logo-nav ul li{
@@ -74,15 +76,13 @@ footer h1{
 
 .horizontal-logo-nav img{
     width:25px;
-    padding-bottom: 10px;
+    margin:20px;
+    transition: width 0.3s;
 }
 
 .horizontal-logo-nav a:hover img{
-    border-bottom: 1px solid black;
-}
-
-.horizontal-logo-nav,.footer-nav a:hover img{
-    border-bottom: 1px solid white;
+    width:40px;
+    transition: width 0.3s;
 }
 
 
@@ -113,24 +113,7 @@ footer h1{
     padding-top:60px; 
 }
 
-/*Responsive Content*/
-@media(max-width:1200px){
-    .horizontal-logo-nav{
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-
-    .horizontal-logo-nav .footer-nav{
-        border-top: 1px solid white;
-        border-bottom: none;
-    }
-
-    .horizontal-logo-nav img{
-        width: 25px;
-    }   
-}
-
-
+/*Resposive content*/
 @media(max-width: 768px){
     .horizontal-logo-nav{
         border-top: 2px solid black;
@@ -138,61 +121,57 @@ footer h1{
     }
 
     .horizontal-logo-nav .footer-nav{
-        border-top: 2px solid white;
+        border-top: 3px solid white;
         border-bottom: none;
+    }
+
+    .horizontal-logo-nav ul li{
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     .horizontal-logo-nav img{
         width: 50px;
+        transition: width 0.3s;
+    }
+
+    .horizontal-logo-nav a:hover img{
+        width: 55px;
+        transition: width 0.3s;
+    }
+
+    .horizontal-logo-nav a:active img{
+        width: 35px;
+        transition: width 0.03s;
     }
 
     .cv-section-title{
-        font-size: 0.2em;
-    }
-
-    .cv-section h3{
-        font-size: 1em;
-    }
-
-    .cv-section p{
-        font-size: 0.5em;
-    }
-
-    .cv-section section{
-        border-top:2px solid blue;
-    }
-}
-
-@media(max-width:370px){   
-    
-    .horizontal-logo-nav{
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-    }
-
-    .horizontal-logo-nav .footer-nav{
-        border-top: 2px solid white;
-        border-bottom: none;
-    }
-
-    .horizontal-logo-nav img{
-        width: 50px;
-    }
-
-    .cv-section-title{
-        font-size: 4.5em;
-    }
-
-    .cv-section h3{
-        font-size: 2.5em;
-    }
-
-    .cv-section p{
         font-size: 2em;
     }
 
-    .cv-section section{
+    .cv-section h3{
+        font-size: 2em;
+    }
+
+    .cv-section p{
+        font-size: 1.5em;
+    }
+
+    .cv-section-content{
         border-top:2px solid blue;
+    }
+
+}
+
+@media(max-width: 370px){
+    .horizontal-logo-nav ul li{
+        margin-left: 2px;
+        margin-right:2px;
+    }
+
+    .horizontal-logo-nav img{
+        width: 25px;
+        transition: none;
     }
 }
 
@@ -211,7 +190,11 @@ footer h1{
 .cv-section section{
     margin-top: 10px;
     padding:10px;
+}
+
+.cv-section-content{
     border-top:1px solid blue;
+    margin-bottom: 10px;
 }
 
 .cv-section-title{
@@ -235,6 +218,30 @@ a.publication-link{
     color:inherit;
 }
 
+a.publication-link:hover section{
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+a.publication-link:active section{
+    background-color: black;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+a.publication-link:active p{
+    color: white; 
+}
+
+a.publication-link:active h3{
+    color: #d6db86;
+}
+
 footer{
     color: #d9d9d9; 
     background-color: black;
@@ -242,3 +249,26 @@ footer{
     padding-bottom: 50px;
 }
 
+/*Language List*/
+#skills-list-container{
+    text-align: center;
+}
+
+#skills-list-container ul{
+    display: inline-block;
+}
+
+#skills-list h6{
+    font-weight: bold;
+}
+
+#skills-list>li{
+    float: left;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.proficiency-list{
+    margin-left: 20px;
+}
