@@ -12,18 +12,29 @@
     </head>
     <body>
         <header>
-            <h1>{{ site.title }} </h1>
-            
+            <h1>{{site.title}}</h1>
             <nav class="horizontal-logo-nav">
                 <ul>
-                    <li><img src="assets/images/linkedin.png"></li>
-                    <li><img src="assets/images/lattes.png"></li>
-                    <li><img src="assets/images/researchgate_logo_treatedt.png"></li>
-                    <li><img src="assets/images/github.png"></li>
+                    <li><a href="https://www.linkedin.com/in/ismael-cesar-11927146" target="_blank" alt="Linkeding">
+                        <img src="assets/images/linkedin.png">
+                        </a>
+                    </li>
+                    <li><a href="http://lattes.cnpq.br/7125338940009959" target="_blank" alt="Currículo lattes">
+                        <img src="assets/images/lattes.png">
+                        </a>
+                    </li>
+                    <li><a href="https://www.researchgate.net/profile/Ismael_Araujo" target="_blank" alt="Research">
+                        <img src="assets/images/researchgate_logo_treatedt.png">
+                        </a>
+                    </li>
+                    <li><a href="https://github.com/IsmaelCesar" target="_blank" alt="Github">
+                        <img src="assets/images/github.png">
+                        </a>
+                    </li>
                     <div class="float-breaker"></div>
                 </ul>
+                <h3 id="email">{{ site.email }}</h3>
             </nav>
-            <h3 id="email">{{ site.email }}</h3>
         </header>
         <div id="cv-content">
             <section class="cv-section">
@@ -31,13 +42,11 @@
                 <h2 class="cv-section-title">Formation</h2>
 
                 <section>
-                    <h3 class="cv-subsection-title"> Formation Title</h3>
+                    <h3 class="cv-subsection-title"> 2015 - 2020 (in progress) -
+                                                    Bachelor degree in Computer Science at 
+                                                    Universidade Federal Rural de Pernambuco</h3>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur blandit pretium velit, eu elementum ante porttitor sed. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam nisl massa, accumsan vitae turpis vel, ullamcorper venenatis nibh. 
-                    Cras pretium condimentum orci, maximus molestie leo sollicitudin sed. 
+                    The degree is expected to finish at 2020.
                     </p>
                 </section>
             </section>
@@ -45,13 +54,23 @@
                 <h2 class="cv-section-title"> Research projects I worked on</h2>
                 
                 <section>
-                    <h3 class="cv-subsection-title"> Project title</h3>
+                    <h3 class="cv-subsection-title"> 2018 - 2019 - Quantum Machine Learning: Models and Learning algorithms</h3>
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Curabitur blandit pretium velit, eu elementum ante porttitor sed. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Nullam nisl massa, accumsan vitae turpis vel, ullamcorper venenatis nibh. 
-                    Cras pretium condimentum orci, maximus molestie leo sollicitudin sed. 
+                    <em>Coordinator: Adenilton José da Silva</em><br>
+                    This work investigates and evaluates the use of quantum associative memories and other 
+                    quantum algorithms to encode data in the basis states for quantum neural networks.
+                    In my participation I also contributed with the implementation a simulation of quantum ensembles 
+                    composed by quantum nural networks.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 class="cv-subsection-title"> 2016 - (in progress) - Quantum Neural Networks: Models and Learning algorithms and architecture selection</h3>
+                    <p>
+                    <em>Coordinator: Adenilton José da Silva</em><br>
+                    This work studies the use of  quantum associative memories in the training,
+                    architecture selection and performance evaluation of quantum neural networks.
+                    In addition, I also contributed to the implementation of procedures that generate quantum circuits for data encoding in quantum state. 
                     </p>
                 </section>
             
@@ -60,27 +79,62 @@
 
                 <h2 class="cv-section-title">Publications</h2>
                 
+                <a class="publication-link" href="https://www.worldscientific.com/doi/abs/10.1142/S0219749918400051?casa_token=f3_iQvpNrC8AAAAA%3AZ8HKyqqimQDh7SQS7E6NXGXAZ1NB1Uirj0RV7pCRcAMIlItDjQf6EtpqIDVGjfFm0hYHsNptklsn6_c&" target="_blank">
                 <section>
-                    <h3 class="cv-subsection-title"> Publication title</h3>
+                    <h3 class="cv-subsection-title"> Quantum enhanced cross-validation for near-optimal neural networks
+                        architecture selection</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Curabitur blandit pretium velit, eu elementum ante porttitor sed. 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nullam nisl massa, accumsan vitae turpis vel, ullamcorper venenatis nibh. 
-                        Cras pretium condimentum orci, maximus molestie leo sollicitudin sed. 
+                        <em>P.G.M. dos Santos, R. S. Araujo, I. C. S. Araujo, A. J. da Silva</em><br>
+                        International Journal of Quantum Information, v. 16, n. 08, p. 1840005, 2018.
                     </p>
                 </section>
-
+                </a>    
+                
+                <a class="publication-link" href="https://ieeexplore.ieee.org/abstract/document/8575612?casa_token=xi_jtfbe2RIAAAAA:rJDlEBoZkwXvugaBqiP2_WzJU46gpsjdXgOP1MaMgMwsNw-LHrEQav3a0_DV2bucRo78pN3eSR2G" target="_blank">
+                <section>
+                    <h3 class="cv-subsection-title"> Quantum enhanced k-fold cross-validation</h3>
+                    <p>
+                        <em>P.G.M. dos Santos, R. S. Araujo, I. C. S. Araujo, A. J. da Silva</em><br>
+                        In: 2018 7th Brazilian Conference on Intelligent Systems (BRACIS). IEEE,2018. p. 194-199.
+                    </p>
+                </section>
+                </a>
+                
+                <a class="publication-link" href="https://sol.sbc.org.br/index.php/eniac/article/view/9339" target="_blank">
+                <section>
+                    <h3 class="cv-subsection-title"> Deep learning models for classification of gases detected by sensor arrays of artificial nose</h3>
+                    <p>
+                        <em>J. Gamboa , I. C. S. Araujo, A. J. da Silva</em><br>
+                        In: Anais do XVI Encontro Nacional de Inteligência Artificial e Computacional. SBC, 2019. p. 844-855.
+                    </p>
+                </section>
+                </a>
             </section>
         </div>
         <footer>
             <h1>{{site.title}}</h1>
             <nav class="horizontal-logo-nav">
                 <ul>
-                    <li><img src="assets/images/linkedin.png"></li>
-                    <li><img src="assets/images/lattes.png"></li>
-                    <li><img src="assets/images/researchgate_logo_treatedt.png"></li>
-                    <li><img src="assets/images/github.png"></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/ismael-cesar-11927146" target="_blank" alt="Linkeding">
+                        <img src="assets/images/linkedin_white.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lattes.cnpq.br/7125338940009959" target="_blank" alt="Currículo lattes">
+                        <img src="assets/images/lattes_white.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.researchgate.net/profile/Ismael_Araujo" target="_blank" alt="Research">
+                        <img src="assets/images/researchgate_logo_treatedt_white.png">
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="https://github.com/IsmaelCesar" target="_blank" alt="Github">
+                        <img src="assets/images/github_white.png">
+                        </a>    
+                    </li>
                     <div class="float-breaker"></div>
                 </ul>
                 <h3 id="email">{{ site.email }}</h3>
