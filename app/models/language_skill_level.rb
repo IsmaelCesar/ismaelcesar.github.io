@@ -1,0 +1,2 @@
+class LanguageSkillLevel < ApplicationRecord
+end
