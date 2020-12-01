@@ -62,7 +62,7 @@ publications = Publication.create([
                                     title: 'Publication 3',
                                     publication_place: 'adaodkaodoakk'
                                     }
-                                  ])
+                                    ])
 
 publications_authors = PublicationAuthor.create([
                                                  {
@@ -109,12 +109,97 @@ publications_authors = PublicationAuthor.create([
 
 languages = Language.create([
                               {
-                                name: 'portuguese'  
+                                name: 'portuguese' , 
+                                is_native: true
                               },
                               {
-                                name: 'french'  
+                                name: 'french',
+                                is_native: false 
                               },
                               {
-                                name: 'english'  
+                                name: 'english',  
+                                is_native: false
+                              }
+                            ])
+
+laguages_skill = LanguageSkill.create([
+                                      {
+                                       skill_type: 1 # Speaking
+                                      },
+                                      {
+                                       skill_type: 2 # Reading
+                                      },
+                                      {
+                                       skill_type: 3 # Writing
+                                      },
+                                      {
+                                       skill_type: 4 # Listening
+                                      }
+                                      ])
+# Skill Level Type
+# Beginner, Elementary, Intermediate, 
+# Upper-intermediate, Advanced, Proficient
+language_skill_level = LanguageSkillLevel.create([
+                                                  {
+                                                    skill_level_type: 1
+                                                  }, 
+                                                  {
+                                                    skill_level_type: 2
+                                                  },
+                                                  {
+                                                    skill_level_type: 3
+                                                  }, 
+                                                  {
+                                                    skill_level_type: 4
+                                                  },
+                                                  {
+                                                    skill_level_type: 5
+                                                  },
+                                                  {
+                                                    skill_level_type: 6
+                                                  }
+                                                 ])
+
+
+LanguageSkillAndLevel.create([
+                              {
+                                language: laguages[1],
+                                language_skill: languages_skill[0],
+                                language_skill_level: language_skill_level[2]
+                              },
+                              {
+                                language: laguages[1],
+                                language_skill: languages_skill[1],
+                                language_skill_level: language_skill_level[5]
+                              },
+                              {
+                                language: laguages[1],
+                                language_skill: languages_skill[3],
+                                language_skill_level: language_skill_level[5]
+                              },
+                              {
+                                language: laguages[1],
+                                language_skill: languages_skill[4],
+                                language_skill_level: language_skill_level[5]
+                              }, 
+                              {
+                                language: laguages[2],
+                                language_skill: languages_skill[0],
+                                language_skill_level: language_skill_level[2]
+                              },
+                              {
+                                language: laguages[2],
+                                language_skill: languages_skill[1],
+                                language_skill_level: language_skill_level[5]
+                              },
+                              {
+                                language: laguages[2],
+                                language_skill: languages_skill[3],
+                                language_skill_level: language_skill_level[5]
+                              },
+                              {
+                                language: laguages[2],
+                                language_skill: languages_skill[4],
+                                language_skill_level: language_skill_level[5]
                               }
                             ])
