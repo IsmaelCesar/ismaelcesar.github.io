@@ -1,7 +1,7 @@
 class MyCvController < ApplicationController
   def index
     @projects = Project.all
-    @publication = Publication.all
+    @publications = Publication.all
     @languages = Language.all
   end
 end

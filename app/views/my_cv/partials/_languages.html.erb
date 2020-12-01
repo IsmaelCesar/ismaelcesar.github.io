@@ -1,0 +1,20 @@
+<h1> Languages</h1>
+
+<% languages.each do |language| %>
+  <div>
+    <p>
+      <%= language.name.capitalize %>
+    </p>
+    <% if language.is_native %>
+      <p> Native speaker </p>
+    <% else %>
+      <p>
+        <ul>
+          <% language.language_skills.zip(language.language_skill_levels).each do |l_skill, l_skill_level| %>
+            <li> <%= l_skill.skill_type.capitalize %>: <%= l_skill_level.skill_level_type.capitalize %></li>
+          <% end %>
+        </ul>
+      </p>
+    <% end  %>
+  </div>
+<% end %>

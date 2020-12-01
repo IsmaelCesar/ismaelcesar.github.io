@@ -141,22 +141,22 @@ languages_skill = LanguageSkill.create([
 # Upper-intermediate, Advanced, Proficient
 language_skill_level = LanguageSkillLevel.create([
                                                   {
-                                                    skill_level_type: 1
+                                                    skill_level_type: 1 # Beginner 
                                                   }, 
                                                   {
-                                                    skill_level_type: 2
+                                                    skill_level_type: 2 # Elementary
                                                   },
                                                   {
-                                                    skill_level_type: 3
+                                                    skill_level_type: 3 # Advanced
                                                   }, 
                                                   {
-                                                    skill_level_type: 4
+                                                    skill_level_type: 4 # Upper Intermediate
                                                   },
                                                   {
-                                                    skill_level_type: 5
+                                                    skill_level_type: 5 # Advanced
                                                   },
                                                   {
-                                                    skill_level_type: 6
+                                                    skill_level_type: 6 # Proficient
                                                   }
                                                  ])
 

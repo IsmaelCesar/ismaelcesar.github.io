@@ -1,2 +1,12 @@
 
 <h1> Projects </h1>
+
+<% projects.each do |project| %>
+  <div>
+    <h2><%= project.title %></h2>
+    <p>
+      <p> Coordenador: <em> <%= project.coordinator.name %> </em> </p>
+      <%= project.description %>
+    </p>
+  </div>
+<% end %>
