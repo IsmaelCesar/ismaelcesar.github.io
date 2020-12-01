@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-coordinator = Corrdinator.create({ name: 'Adenilton José da Silva', 
+coordinator = Coordinator.create({ name: 'Adenilton José da Silva' 
                                   })
 Project.create([{
                 title: 'Lorem ipsum dolor sit amet',
@@ -122,7 +122,7 @@ languages = Language.create([
                               }
                             ])
 
-laguages_skill = LanguageSkill.create([
+languages_skill = LanguageSkill.create([
                                       {
                                        skill_type: 1 # Speaking
                                       },
@@ -163,42 +163,42 @@ language_skill_level = LanguageSkillLevel.create([
 
 LanguageSkillAndLevel.create([
                               {
-                                language: laguages[1],
+                                language: languages[1],
                                 language_skill: languages_skill[0],
                                 language_skill_level: language_skill_level[2]
                               },
                               {
-                                language: laguages[1],
+                                language: languages[1],
                                 language_skill: languages_skill[1],
                                 language_skill_level: language_skill_level[5]
                               },
                               {
-                                language: laguages[1],
+                                language: languages[1],
                                 language_skill: languages_skill[3],
                                 language_skill_level: language_skill_level[5]
                               },
                               {
-                                language: laguages[1],
+                                language: languages[1],
                                 language_skill: languages_skill[4],
                                 language_skill_level: language_skill_level[5]
                               }, 
                               {
-                                language: laguages[2],
+                                language: languages[2],
                                 language_skill: languages_skill[0],
                                 language_skill_level: language_skill_level[2]
                               },
                               {
-                                language: laguages[2],
+                                language: languages[2],
                                 language_skill: languages_skill[1],
                                 language_skill_level: language_skill_level[5]
                               },
                               {
-                                language: laguages[2],
+                                language: languages[2],
                                 language_skill: languages_skill[3],
                                 language_skill_level: language_skill_level[5]
                               },
                               {
-                                language: laguages[2],
+                                language: languages[2],
                                 language_skill: languages_skill[4],
                                 language_skill_level: language_skill_level[5]
                               }
