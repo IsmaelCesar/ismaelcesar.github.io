@@ -203,3 +203,15 @@ LanguageSkillAndLevel.create([
                                 language_skill_level: language_skill_level[5]
                               }
                             ])
+
+
+Formation.create [ 
+                    {
+                      start: Date.new(2015), 
+                      finish: Date.new(2021),
+                      is_in_progress: true,
+                      degree: 'Bachelor', 
+                      field: 'Computer Science',
+                      institution: 'Universidade Federal Rural de Pernambuco'
+                    }
+                  ]

@@ -3,5 +3,6 @@ class MyCvController < ApplicationController
     @projects = Project.all
     @publications = Publication.all
     @languages = Language.all
+    @formations = Formation.all
   end
 end

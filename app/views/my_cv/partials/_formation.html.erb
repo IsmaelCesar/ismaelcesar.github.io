@@ -1,0 +1,16 @@
+<h1> Formation <h1>
+
+<% formations.each do |formation| %>
+  <h4> 
+    <%= formation.start.year %> -  <%= formation.finish.year %> 
+    <% if formation.is_in_progress %> 
+      <i> (in progress) </i>
+    <% end %>
+  </h4> 
+  <p> 
+    <%= formation.degree %> degree in 
+    <%= formation.field %>, at
+    <%= formation.institution %>
+
+  </p>
+<% end %>
