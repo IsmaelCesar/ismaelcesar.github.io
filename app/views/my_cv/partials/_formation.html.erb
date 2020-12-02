@@ -1,12 +1,12 @@
-<h1> Formation <h1>
+<h1> <%= I18n.t('site_sections.formation') %> <h1>
 
 <% formations.each do |formation| %>
-  <h4> 
+  <h5> 
     <%= formation.start.year %> -  <%= formation.finish.year %> 
     <% if formation.is_in_progress %> 
       <i> (in progress) </i>
     <% end %>
-  </h4> 
+  </h5> 
   <p> 
     <%= formation.degree %> degree in 
     <%= formation.field %>, at

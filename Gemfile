@@ -78,3 +78,5 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 gem 'popper_js', '~> 1.14.5'
 gem 'jquery-rails'
 gem 'bootstrap'
+
+gem 'rails-i18n', '~> 5.1', '>= 5.1.3'

@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+programming-languages-logos@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/programming-languages-logos/-/programming-languages-logos-0.0.3.tgz#17e073244d7886a2dc86d20ee6b3332ba765c5f4"
+  integrity sha512-58WiFkwCoEEwC86WUnRVSBM1vuNqxK4izjwR7uia/uAMw3zdFoVBa+JER1xIuyJxQrxf1T6+eZvoCnsnwXRfRg==

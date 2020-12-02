@@ -1,9 +1,9 @@
 
-<h1> Projects </h1>
+<h1> <%= I18n.t('site_sections.projects') %> </h1>
 
 <% projects.each do |project| %>
   <div>
-    <h2><%= project.title %></h2>
+    <h5><%= project.title %></h5>
     <p>
       <p> Coordenador: <em> <%= project.coordinator.name %> </em> </p>
       <%= project.description %>

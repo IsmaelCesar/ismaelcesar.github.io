@@ -30,4 +30,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_name: 'Ismael Cesar'
+  site_sections: 
+    formation: 'Formation'
+    projects: 'Projects'  
+    publications: 'Publications'
+    languages: 'Languages'
+    programming_languages: 'Programming Languages'
+    other_skills: 'Other skills'
+

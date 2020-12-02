@@ -13,3 +13,132 @@
  *= require_tree .
  *= require_self
  */
+
+  /*Configuring and defining font families*/
+  @font-face {
+    font-family: 'PoiretOne'; 
+    src: url('PoiretOne-Regular.woff');
+  }
+
+  @font-face { 
+    font-family: 'Raleway-Regular'; 
+    src: url('Raleway/Raleway-Regular.ttf')
+  }
+
+  @font-face { 
+    font-family: 'Raleway-Italic'; 
+    src: url('Raleway/Raleway-Italic.ttf')
+  }
+
+  @font-face{
+    font-family: 'Raleway-Bold'; 
+    src: url('Raleway/Raleway-Bold.ttf')
+  }
+
+  @font-face { 
+    font-family: 'button-text'; 
+    src: url('Raleway/Raleway-Thin.ttf')
+  }
+
+  h1, h2, h3, h4, h5, strong {
+    font-family: 'Raleway-Bold';
+  }
+
+  p, a, li{
+    font-family: 'Raleway-Regular';
+  }
+
+  i, em {
+     font-family: 'Raleway-Italic'
+  }
+
+  .app-name{
+    font-family: 'PoiretOne';
+  }
+
+ .footer-logo{
+   width: 3em;
+ }
+
+ /*Configuring and defining nav-list and nav-list-items*/
+
+ .nav-list{
+   list-style-type: none;
+   display: flex;
+ }
+
+ .nav-list-item{
+   font-family: 'button-text';
+ }
+
+ .top-menu{
+  justify-content: flex-end;
+ }
+
+ .footer-menu{
+  justify-content: space-evenly;
+  width: 80%;
+  margin:auto
+ }
+
+ footer{ 
+   background-color: black; 
+   margin-bottom: 0; 
+   height: 20em;
+ }
+
+ footer h1{
+   font-family: 'PoiretOne';
+   color: white;
+   text-align: center; 
+   border-bottom: 1px solid white;
+   width: 80%; 
+   margin:auto;
+ }
+
+ /* mobile sizes*/
+ @media screen and (max-width: 600px) {
+    
+    .app-name{
+      font-size: 2em; 
+      margin-left: 0.5em
+    }
+
+    /* Programming Languages Section */
+    .programming-languages ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+
+    .programming .lang-ruby {
+      background-image: url('programming-languages-logos/src/ruby/ruby.svg');
+    }
+
+
+    /*Configuring footer element*/
+
+    footer{
+      height: 10em;
+    }
+
+    footer h1{
+      font-size:1.5em;
+      width: 70%;
+      margin-bottom: 10px;
+    }
+
+    footer nav{
+      padding-top: 15%;
+    }
+
+    .nav-list .footer-menu{
+      width: 80%;
+      display: block;
+    }
+
+    .footer-logo{
+      width: 1em;
+    }
+ }

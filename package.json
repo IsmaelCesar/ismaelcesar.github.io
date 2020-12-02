@@ -1,7 +1,9 @@
 {
   "name": "website_ismaelcesar",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "programming-languages-logos": "^0.0.3"
+  },
   "version": "1.0.0",
   "description": "Ismael's personal website that he'll use to practice some front-end skills",
   "main": "index.js",

@@ -1,30 +1,30 @@
-<h1>MyCv#index</h1>
-
-
-<hr>
-<%= render 'my_cv/partials/about_me' %>
-
-
 <hr>
 
-<%= render 'my_cv/partials/formation', formations: @formations %>
+<div class="container-fluid">
 
-<hr>
+  <%= render 'my_cv/partials/about_me' %>
 
-<%= render 'my_cv/partials/projects', projects: @projects %>
+  <hr>
 
-<hr>
+  <%= render 'my_cv/partials/formation', formations: @formations %>
 
-<%= render 'my_cv/partials/publications', publications: @publications %>
+  <hr>
 
-<hr>
+  <%= render 'my_cv/partials/projects', projects: @projects %>
 
-<%= render 'my_cv/partials/languages', languages: @languages %>
+  <hr>
 
-<hr>
+  <%= render 'my_cv/partials/publications', publications: @publications %>
 
-<%= render 'my_cv/partials/programming_languages' %>
+  <hr>
 
-<hr>
+  <%= render 'my_cv/partials/languages', languages: @languages %>
 
-<%= render 'my_cv/partials/other_skills' %>
+  <hr>
+
+  <%= render 'my_cv/partials/programming_languages' %>
+
+  <hr>
+
+  <%= render 'my_cv/partials/other_skills' %>
+</div>

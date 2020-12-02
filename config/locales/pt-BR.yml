@@ -1,0 +1,9 @@
+'pt-BR':
+  app_name: 'Ismael Cesar'
+  site_sections: 
+    formation: 'Formação'
+    projects: 'Projetos'  
+    publications: 'Publicações'
+    languages: 'Idiomas'
+    programming_languages: 'Linguagens de Programação'
+    other_skills: 'Outras habilidades'
