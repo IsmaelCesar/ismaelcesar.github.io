@@ -17,3 +17,18 @@
 //= require popper
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(() => {
+  let responsive_bars = document.querySelector("#responsive-bars");
+  $(responsive_bars).click(()=>{
+    let top_nav = document.querySelector("#top-menu");
+    if(top_nav.className === 'nav-list top-menu' ){
+      top_nav.className += ' responsive';
+    }
+    else{
+      top_nav.className = 'nav-list top-menu';
+    }
+  });
+
+
+});

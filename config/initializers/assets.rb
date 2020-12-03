@@ -14,4 +14,9 @@ Rails.application.config.assets.paths << Rails.root.join('lib')
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 Rails.application.config.assets.precompile += %w( my_avatar.png lattes.png lattes_white.png)
-Rails.application.config.assets.precompile += %w( programming-languages-logos/src/ruby/ruby.svg )
+Rails.application.config.assets.precompile += %w( programming-languages-logos/src/ruby/ruby.svg 
+                                                  programming-languages-logos/src/python/python.svg
+                                                  programming-languages-logos/src/javascript/javascript.svg
+                                                  programming-languages-logos/src/java/java.svg
+                                                  programming-languages-logos/src/c/c.svg
+                                                )

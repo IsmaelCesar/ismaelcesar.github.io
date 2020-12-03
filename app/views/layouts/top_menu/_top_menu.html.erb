@@ -1,9 +1,15 @@
-<nav>
-   <h1 class='app-name'> <%= I18n.t('app_name') %> </h1>
-   <ul class='nav-list top-menu'>
-      <li class='nav-list-item'> <%= I18n.t('site_sections.formation') %> </li>
-      <li class='nav-list-item'> <%= I18n.t('site_sections.projects') %> </li>
-      <li class='nav-list-item'> <%= I18n.t('site_sections.publications') %> </li>
-      <li class='nav-list-item'> <%= I18n.t('site_sections.other_skills') %> </li>
+<nav class="top-nav">
+   <h1 class="app-name"> <%= I18n.t('app_name') %> </h1>
+   <ul class="nav-list top-menu" id="top-menu">
+      <li class="nav-list-item"> <a href=""> <%= I18n.t('site_sections.formation') %> </a> </li>
+      <li class="nav-list-item"> <a href=""> <%= I18n.t('site_sections.projects') %> </a> </li>
+      <li class="nav-list-item"> <a href=""> <%= I18n.t('site_sections.publications') %> </a> </li>
+      <li class="nav-list-item"> <a href=""> <%= I18n.t('site_sections.other_skills') %> </a> </li>
+      <li class="icon-list-item"> 
+         <a href="javascript:void(0);" class="icon" id="responsive-bars">
+            <i class="fa fa-bars"></i>
+         </a>   
+      </li>
    </ul>
+   <p class="float-breaker"></p>
 </nav>
