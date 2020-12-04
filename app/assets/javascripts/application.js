@@ -31,4 +31,16 @@ $(document).ready(() => {
   });
 
 
+  window.onscroll = ()=>{
+    let top_nav_element = document.querySelector('.top-nav');
+    if( window.pageYOffset > 0) {
+      if(!top_nav_element.classList.contains('put-shadow')){
+        top_nav_element.classList.add('put-shadow', 'sticky');
+      }
+    }
+    else{
+      top_nav_element.classList.remove('put-shadow', 'sticky');
+    }
+  }
+
 });

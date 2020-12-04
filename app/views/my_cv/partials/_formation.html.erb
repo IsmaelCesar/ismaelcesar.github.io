@@ -1,16 +1,18 @@
-<h1> <%= I18n.t('site_sections.formation') %> <h1>
+<section class="formation-section">
+  <h1 class="section-title"> <%= I18n.t('site_sections.formation') %> <h1>
 
-<% formations.each do |formation| %>
-  <h5> 
-    <%= formation.start.year %> -  <%= formation.finish.year %> 
-    <% if formation.is_in_progress %> 
-      <i> (in progress) </i>
-    <% end %>
-  </h5> 
-  <p> 
-    <%= formation.degree %> degree in 
-    <%= formation.field %>, at
-    <%= formation.institution %>
+  <% formations.each do |formation| %>
+    <h5> 
+      <%= formation.start.year %> -  <%= formation.finish.year %> 
+      <% if formation.is_in_progress %> 
+        <i> (in progress) </i>
+      <% end %>
+    </h5> 
+    <p> 
+      <%= formation.degree %> degree in 
+      <%= formation.field %>, at
+      <%= formation.institution %>
 
-  </p>
-<% end %>
+    </p>
+  <% end %>
+</section>

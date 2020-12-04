@@ -1,14 +1,15 @@
+<section id="publications-section">
+  <h1 class="section-title"><%= I18n.t('site_sections.publications') %></h1>
 
-<h1><%= I18n.t('site_sections.publications') %></h1>
-
-<% publications.each do |publication| %>
-  <div>
-    <h5> <%= publication.title %> </h5>
-    <p> 
-      <% publication.authors.each do |author| %>
-        <em> <%= author.name %>, </em>
-      <% end %>
-    </p>
-    <p> <%= publication.publication_place %> </p>
-  </div>
-<% end %>
+  <% publications.each do |publication| %>
+    <div>
+      <h5> <%= publication.title %> </h5>
+      <p class="publication-authors-names"> 
+        <% publication.authors.each do |author| %>
+          <em> <%= author.name %>, </em>
+        <% end %>
+      </p>
+      <p> <%= publication.publication_place %> </p>
+    </div>
+  <% end %>
+</section>
