@@ -20,18 +20,21 @@
 
 $(document).ready(() => {
   let responsive_bars = document.querySelector("#responsive-bars");
-  $(responsive_bars).click(()=>{
-    let top_nav = document.querySelector("#top-menu");
-    if(top_nav.className === 'nav-list top-menu' ){
-      top_nav.className += ' responsive';
-    }
-    else{
-      top_nav.className = 'nav-list top-menu';
-    }
-  });
+  if(window.outerWidth < 1000){
+    $(responsive_bars).click(()=>{
+      let top_nav = document.querySelector("#top-menu");
+      if(top_nav.className === 'nav-list top-menu' ){
+        top_nav.className += ' responsive';
+      }
+      else{
+        top_nav.className = 'nav-list top-menu';
+      }
+    });
+  }
 
 
   window.onscroll = ()=>{
+    // Setting responsive screen only for mobile devices
     let top_nav_element = document.querySelector('.top-nav');
     if( window.pageYOffset > 0) {
       if(!top_nav_element.classList.contains('put-shadow')){
@@ -41,6 +44,7 @@ $(document).ready(() => {
     else{
       top_nav_element.classList.remove('put-shadow', 'sticky');
     }
+
   }
 
 });

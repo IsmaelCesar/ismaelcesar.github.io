@@ -75,6 +75,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    margin-top: -2em;
     margin-left: 0;
     margin-right: 0;
   }
@@ -104,6 +105,15 @@
   }
 
 
+  /* Publicatoins */
+  #publication-set{
+    display: flex;
+    justify-content: space-evenly;   
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
   /* Programming Languages  Section */
 
   #programming-languages-section ul{
@@ -126,6 +136,7 @@
     width: 80%; 
     margin: auto;
   }
+
   #other-skills-section{
     margin-bottom: 2em;
   }
@@ -188,7 +199,8 @@
  }
 
  .top-menu{
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-content: flex-end;
   top: 0;
   right: 0;
  }
@@ -485,13 +497,27 @@
 
  }
 
+ section[id*='-section']{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
  /* Ipads e tablets*/
  /* portrait */
  @media only screen and (min-width: 700px){
 
+  section[id*='-section']{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  div[class*='-container']{
+    margin-top: 1.5em;
+  }
+
   /* Generic elements */
   .section-title{
-    font-size: 5em;
+    font-size: 2em;
   }
 
    /* Top navigation */
@@ -506,7 +532,7 @@
   }
 
   #about-me-section img{
-    width: 30%;
+    width: 15%;
     margin-top: 10%; 
   }
 
@@ -526,43 +552,176 @@
     margin-bottom: 1em;
   }
 
+
+
   /* Formation */
   .formation-time-period{
-    font-size: 2em;
+    font-size: 0.5em;
   }
 
   .formation-description{
-    font-size: 2em;
+    font-size: 0.5em;
   }
 
   /* Projects */
 
   .project-title{
-    font-size: 2.5em;
+    font-size: 1em;
   }
 
   .project-coordinator-name{
-    font-size: 1.5em;
+    font-size: 0.7em;
   }
 
   .project-description {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   /* Publications */
   .publication-title {
-     font-size: 2.5em;
+     font-size: 1em;
   }
 
   .publication-authors-names{
-    font-size: 1.5em;
+    font-size: 0.7em;
   }
 
   .publication-description {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   /* Languages */
 
+  /* Footer */
+  
+  footer nav{
+    padding-top:5%;
+  }
 
 } 
+
+/*Tablets portrait and Desktop*/
+@media  screen and (min-width: 1000px){
+
+    /*Top nav menu*/
+    #responsive-bars{
+      display: none;
+    }
+
+    .top-nav{
+      height: 5em;
+    }
+
+    .app-name{
+      float:left;
+    }
+
+    .top-menu{
+      float:right;
+      justify-content: space-between;
+      margin-top: 2.5%;
+      margin-right:2%;
+    }
+
+    .nav-list{
+      width: 70%;
+      background-color: none;
+    }
+
+    .top-menu .nav-list-item{
+      margin-left: 5%;
+    }
+
+    .top-nav li.nav-list-item{
+      display: block;
+    }
+
+    /*About-me section*/
+    #about-me-section{
+      background-size: 100%;
+      background-position-y: center;
+      background-position-x: center;
+    }
+
+    #about-me-section img{
+      width: 10%;
+    }
+
+    #greetings{
+      font-size: 3em;
+    }
+
+    #about-me-description{
+      font-size: 1.5em;
+    }
+
+    /* Section containers */    
+    section[id*='-section']{
+      margin-top: 2.5em;
+      margin-bottom: 2.5em;
+    }
+
+    .section-title{
+      margin-bottom: 1.5em;
+    }
+
+    /* Projects */
+
+    .project-title{
+      font-size: 2em;
+    }
+
+    .project-coordinator-name{
+      font-size: 1em;
+    }
+
+    .project-description{
+      font-size: 1.3em;
+    }
+
+    .project-container{
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+
+    /* Publications */
+
+    .publication-title{
+      font-size: 2em; 
+    }
+
+    .publication-authors-names{
+      font-size: 1em;
+    }
+    
+
+    .publication-description{
+      font-size: 1.5em;
+    }
+
+    .publication-container{
+      margin-top: 2.5em;
+      margin-bottom: 2.5em;
+    }
+
+
+    /* Footer */
+    footer{
+      height: 20em;
+    }
+
+    footer .my-email{
+      font-size:2.5em;
+    }
+
+    footer nav{
+      padding-top: 7%;
+    }
+
+    footer .nav-list-item img{
+      width: 3em;
+      height: 3em;
+    }
+
+}
