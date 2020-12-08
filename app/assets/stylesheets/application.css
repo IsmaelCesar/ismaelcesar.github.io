@@ -103,6 +103,54 @@
     text-align: justify;
   }
 
+
+  /* Programming Languages  Section */
+
+  #programming-languages-section ul{
+    list-style-type: None;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    color: white;
+    line-height: 100%;
+  }
+
+  #programming-languages-section ul li{
+    background-color: blueviolet;
+    text-align: center;
+  }
+
+  /* Other Skill Sections  */
+
+  #skill-list{
+    width: 80%; 
+    margin: auto;
+  }
+  #other-skills-section{
+    margin-bottom: 2em;
+  }
+
+  #other-skills-section ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #other-skills-section #skill-list>li{
+    margin-top: 3em;
+  }
+
+  #other-skills-section .skill-item{
+    border-bottom: 1px solid blueviolet;
+  }
+
+  #skill-list strong{
+    display: block;
+    border-bottom: 1px solid blueviolet;
+  }
+
+  /*===============================*/
+
  .footer-logo{
    width: 3em;
  }
@@ -149,9 +197,6 @@
    clear: both;
    margin: 0; 
  }
-
-
- 
 
  /* Project Elements*/
 
@@ -219,7 +264,7 @@
 
       /*Defining the formatting of a nav-list item before being responsive*/
       .top-nav {
-        height: 8.9%;
+        height: 10%;
       }
 
       .top-nav li.nav-list-item{
@@ -279,6 +324,18 @@
       font-size: 0.8em; 
     }
 
+    /*  Programming Languages Section */
+    #programming-languages-section ul li{
+      padding: 5px;
+      padding-bottom: 0;
+      margin-left:2%; 
+      margin-right: 2%;
+      border-radius: 5px;
+      -o-border-radius: 5px;
+      -moz-border-radius: 5px; 
+      -webkit-border-radius: 5px; 
+    }
+
     /*Configuring footer element*/
 
     footer{
@@ -332,7 +389,7 @@
 
     /*Defining the formatting of a nav-list item before being responsive*/
     .top-nav{
-      height: 15%;
+      height: 20%;
     }
 
     .top-nav li.nav-list-item{
@@ -380,9 +437,50 @@
       margin-top: 0;
     }
 
+    /*  Programming Languages Section */
+    #programming-languages-section ul li{
+      padding: 5px;
+      padding-bottom: 0;
+      margin-left:2%; 
+      margin-right: 2%;
+      border-radius: 5px;
+      -o-border-radius: 5px;
+      -moz-border-radius: 5px; 
+      -webkit-border-radius: 5px; 
+    }
+
+    /* Other Skills Section */
+
+
+    /*=====================*/
     /* Formation description */
     .formation-description{
       font-size: 1em;
+    }
+
+    /*Configuring footer element*/
+
+    footer{
+      height: 10em;
+    }
+
+    footer h1{
+      font-size:1.5em;
+      width: 70%;
+      margin-bottom: 10px;
+    }
+
+    footer nav{
+      padding-top:10%;
+    }
+
+    .nav-list .footer-menu{
+      width: 80%;
+      display: block;
+    }
+
+    .footer-logo{
+      width: 1em;
     }
 
  }
