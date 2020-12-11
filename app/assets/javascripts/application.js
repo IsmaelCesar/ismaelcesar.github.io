@@ -19,21 +19,23 @@
 //= require_tree .
 
 $(document).ready(() => {
-  let responsive_bars = document.querySelector("#responsive-bars");
-  if(window.outerWidth < 1000){
+  if( window.outerWidth < 1000 ){
+    let responsive_bars = document.querySelector("#responsive-bars");
+
     $(responsive_bars).click(()=>{
-      let top_nav = document.querySelector("#top-menu");
-      if(top_nav.className === 'nav-list top-menu' ){
-        top_nav.className += ' responsive';
-      }
-      else{
-        top_nav.className = 'nav-list top-menu';
-      }
+        let top_nav = document.querySelector("#top-menu");
+        if(top_nav.className === 'nav-list top-menu' ){
+          top_nav.className += ' responsive';
+        }
+        else{
+          top_nav.className = 'nav-list top-menu';
+        }
     });
   }
 
 
   window.onscroll = ()=>{
+    console.log();
     // Setting responsive screen only for mobile devices
     let top_nav_element = document.querySelector('.top-nav');
     if( window.pageYOffset > 0) {
@@ -46,5 +48,31 @@ $(document).ready(() => {
     }
 
   }
+  document.querySelectorAll('a.top-nav-link').forEach((element, index)=>{    
+    $(element).click((event)=>{ 
+      if(element.hash != ""){
+        let hash = element.hash 
+        deslocamento = $(hash).offset().top - $('.top-nav').height();
+        event.preventDefault();
+        $('html, body').animate({
+                                  scrollTop: deslocamento
+                                }, 
+                                800,
+                                 function(){
+                                      window.scrollY = deslocamento; 
+                                  }); 
+      }
+    });
+  });
+
+  $('a#class-name-link').click((event)=>{
+      event.preventDefault();      
+      deslocamento = $('.top-nav').offset().top
+      $('html, body').animate({
+                                  scrollTop: "0"
+                                }, 
+                                800);
+      
+  });
 
 });

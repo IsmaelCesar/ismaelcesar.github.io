@@ -57,10 +57,34 @@
      font-family: 'Raleway-Italic'
   }
 
-  .app-name{
+  .app-name, a#class-name-link{
     font-family: 'PoiretOne';
+    color: black; 
+    text-decoration: none; 
     margin-left: 0.5em;
     margin-top: 0.3em;
+  }
+/*
+  a#class-name-link{
+    position: relative;
+  }
+
+  a#class-name-link::before{
+    content: "",;
+    position: absolute; 
+    width: 100%;
+    height: 5px; 
+    left: 0; 
+    bottom: 0; 
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  } */
+
+  a#class-name-link:hover::before{
+    visibility: visible;
+    transform: scaleX(1);
   }
 
   .put-shadow{
@@ -108,10 +132,15 @@
   /* Publicatoins */
   #publication-set{
     display: flex;
-    justify-content: space-evenly;   
+    justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    align-items: center;
+  }
+
+  #publication-set .publication-container{
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 20em;
   }
 
   /* Programming Languages  Section */
@@ -128,6 +157,11 @@
   #programming-languages-section ul li{
     background-color: blueviolet;
     text-align: center;
+    transition: background-color 0.5s;
+  }
+
+  #programming-languages-section ul li:hover{
+    background-color: crimson;
   }
 
   /* Other Skill Sections  */
@@ -172,6 +206,8 @@
     height: 20%;
     padding-top: 1px;
     background-color: white;
+    border-bottom: 1px solid #c0c0c0;
+    margin-bottom: 2em;
  }
 
  .sticky {
@@ -277,6 +313,7 @@
       /*Defining the formatting of a nav-list item before being responsive*/
       .top-nav {
         height: 10%;
+        width: 100vh;
       }
 
       .top-nav li.nav-list-item{
@@ -315,6 +352,11 @@
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: 50em;
+    }
+
+    #about-me-section img{
+      width: 30%;
+      margin-top: 3em;
     }
 
     /* Programming Languages Section */
@@ -377,7 +419,7 @@
  /*Phone landscape*/
  @media only screen and (min-width: 500px){
   .app-name {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
 
@@ -385,7 +427,7 @@
     /*Icon list item decoration*/
     a.icon{
       text-decoration: none;
-      font-size: 1.3em;
+      font-size: 1em;
       display: inline-block;
       position: absolute;
       top: 0; 
@@ -401,7 +443,7 @@
 
     /*Defining the formatting of a nav-list item before being responsive*/
     .top-nav{
-      height: 20%;
+      height: 15%;
     }
 
     .top-nav li.nav-list-item{
@@ -552,8 +594,6 @@
     margin-bottom: 1em;
   }
 
-
-
   /* Formation */
   .formation-time-period{
     font-size: 0.5em;
@@ -610,9 +650,11 @@
 
     .top-nav{
       height: 5em;
+      overflow: hidden;
     }
 
     .app-name{
+      font-size: 3em;
       float:left;
     }
 
@@ -638,27 +680,28 @@
 
     /*About-me section*/
     #about-me-section{
-      background-size: 100%;
+      background-size: 100vmax;
       background-position-y: center;
       background-position-x: center;
     }
 
     #about-me-section img{
       width: 10%;
+      margin-top: 10%;
     }
 
     #greetings{
-      font-size: 3em;
+      font-size: 5em;
     }
 
     #about-me-description{
-      font-size: 1.5em;
+      font-size: 2em;
     }
 
     /* Section containers */    
     section[id*='-section']{
-      margin-top: 2.5em;
-      margin-bottom: 2.5em;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
     }
 
     .section-title{
@@ -688,16 +731,16 @@
     /* Publications */
 
     .publication-title{
-      font-size: 2em; 
+      font-size: 1.5em; 
     }
 
     .publication-authors-names{
-      font-size: 1em;
+      font-size: 0.7em;
     }
     
 
     .publication-description{
-      font-size: 1.5em;
+      font-size: 1.6em;
     }
 
     .publication-container{
