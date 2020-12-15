@@ -64,23 +64,6 @@
     margin-left: 0.5em;
     margin-top: 0.3em;
   }
-/*
-  a#class-name-link{
-    position: relative;
-  }
-
-  a#class-name-link::before{
-    content: "",;
-    position: absolute; 
-    width: 100%;
-    height: 5px; 
-    left: 0; 
-    bottom: 0; 
-    background-color: black;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-  } */
 
   a#class-name-link:hover::before{
     visibility: visible;
@@ -120,6 +103,20 @@
 
   #about-me-section img{
     border-radius: 50%;
+    width: 10%;
+  }
+
+  /* Formation */
+  #formation-section .section-title{
+    margin-bottom: -1em;
+  }
+  #formation-section .formation-time-period{
+    font-size: 0.5em;
+    margin-top: -2em;
+  }
+
+  #formation-section .formation-description {
+    font-size: 0.5em;
   }
 
   /* Projects section general configurations */
@@ -213,6 +210,7 @@
  .sticky {
    position: fixed;
    top:0;
+   right:0;
    width: 100%;
  }
 
@@ -285,144 +283,25 @@
    display: none;
  }
 
- /* mobile sizes*/
- /*Phone portrait*/
- @media only screen and (max-width: 600px) {
-    
-    .app-name{
-      font-size: 2em; 
-    }
-
-    /* Configuring top menu */
-      /*Icon list item decoration*/
-      a.icon{
-        text-decoration: none;
-        display: inline-block;
-        position: absolute;
-        top: 0; 
-        right: 0;
-        color: black;
-        padding: 1em 1em;
-      }
-
-      a.icon:active{
-        color:white;
-        background-color: black;
-      }
-
-      /*Defining the formatting of a nav-list item before being responsive*/
-      .top-nav {
-        height: 10%;
-        width: 100vh;
-      }
-
-      .top-nav li.nav-list-item{
-        display: none;
-      }
-
-      /*defining styles for when the top-navigation is set to be responsive*/      
-      .top-nav .nav-list.top-menu.responsive{
-        margin-bottom: 30px;
-      }
-
-      .nav-list.top-menu.responsive {
-        background-color: white;
-        display: block;
-        position: absolute;
-        width: 75%;
-        z-index: 2;
-        top: 0;
-        right:0;
-      }
-
-      .nav-list.top-menu.responsive .nav-list-item{
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
-    
-      .section-title{
-        font-size: 2em;
-        margin-bottom: 1.5em;
-      }
-
-
-    /* About-me section */
-    #about-me-section{
-      background-position: bottom;
-      background-repeat: no-repeat;
-      background-size: 50em;
-    }
-
-    #about-me-section img{
-      width: 30%;
-      margin-top: 3em;
-    }
-
-    /* Programming Languages Section */
-    .programming-languages ul{
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-    }
-
-    /* Projects section configuration */
-    #projects-section .project-coordinator-name{
-      font-size: 0.7em;
-    }
-  
-  
-    /* Publication section configuration */ 
-    #publications-section .publication-authors-names{
-      font-size: 0.8em; 
-    }
-
-    /*  Programming Languages Section */
-    #programming-languages-section ul li{
-      padding: 5px;
-      padding-bottom: 0;
-      margin-left:2%; 
-      margin-right: 2%;
-      border-radius: 5px;
-      -o-border-radius: 5px;
-      -moz-border-radius: 5px; 
-      -webkit-border-radius: 5px; 
-    }
-
-    /*Configuring footer element*/
-
-    footer{
-      height: 10em;
-    }
-
-    footer h1{
-      font-size:1.5em;
-      width: 70%;
-      margin-bottom: 10px;
-    }
-
-    footer nav{
-      padding-top: 15%;
-    }
-
-    .nav-list .footer-menu{
-      width: 80%;
-      display: block;
-    }
-
-    .footer-logo{
-      width: 1em;
-    }
+ #overlay{
+  position: fixed;
+  display: none; 
+  top: 0; 
+  right: 0; 
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 0;
+  cursor: pointer;
  }
 
- /*Phone landscape*/
- @media only screen and (min-width: 500px){
+ /* mobile sizes*/
+
+ /*Phone portrait*/
+ @media screen and (max-width: 500px){
   .app-name {
     font-size: 2em;
   }
-
-
   /* Configuring top menu */
     /*Icon list item decoration*/
     a.icon{
@@ -441,9 +320,10 @@
       background-color: black;
     }
 
+
     /*Defining the formatting of a nav-list item before being responsive*/
     .top-nav{
-      height: 15%;
+      height: 3.5em;
     }
 
     .top-nav li.nav-list-item{
@@ -460,7 +340,7 @@
       display: block;
       position: absolute;
       width: 75%;
-      z-index: 2;
+      z-index: 1;
       top: 0;
       right:0;
     }
@@ -473,13 +353,14 @@
     
     /* About-me section*/
     #about-me-section{
-      background-size: 95%;
+      background-size: 100vh;
       background-position-y: center;
       background-position-x: center;
     }
 
     #about-me-section img{
-      width: 15%;
+      width: 25%;
+      margin-top: 3em;
     }
 
     #greetings{
@@ -505,12 +386,7 @@
 
     /* Other Skills Section */
 
-
     /*=====================*/
-    /* Formation description */
-    .formation-description{
-      font-size: 1em;
-    }
 
     /*Configuring footer element*/
 
@@ -539,232 +415,61 @@
 
  }
 
- section[id*='-section']{
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+/* Phones portrait*/
+@media only screen and (min-width: 600px){
+  .app-name {
+    font-size: 2em;
+  }
+  /* Configuring top menu */
+    /*Icon list item decoration*/
+    a.icon{
+      text-decoration: none;
+      font-size: 1em;
+      display: inline-block;
+      position: absolute;
+      top: 0; 
+      right: 0;
+      color: black;
+      padding: 1em 1em;
+    }
+
+    a.icon:active{
+      color:white;
+      background-color: black;
+    }
+
+  /* About-me */
 }
 
- /* Ipads e tablets*/
- /* portrait */
- @media only screen and (min-width: 700px){
-
-  section[id*='-section']{
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-
-  div[class*='-container']{
-    margin-top: 1.5em;
-  }
-
-  /* Generic elements */
-  .section-title{
-    font-size: 2em;
-  }
-
-   /* Top navigation */
+/* Tablets portrait */
+@media only screen and (min-width: 900px){
+  /*Defining the formatting of a nav-list item before being responsive*/
   .top-nav{
-    height: 7%;
+    height: 3.5em;
   }
 
-  /*About-me section*/
-  #about-me-section{
-    background-position: center;
-    background-size: 100vh;
+  .top-nav li.nav-list-item{
+    display: none;
   }
 
-  #about-me-section img{
-    width: 15%;
-    margin-top: 10%; 
+  /*defining styles for when the top-navigation is set to be responsive*/      
+  .top-nav .nav-list.top-menu.responsive{
+    margin-bottom: 30px;
   }
 
-  #greetings{
-    font-size: 5em;
-  }  
-
-  #about-me-description {
-    font-size: 3em;
-  }
-
-  /* Nav list menu */
-  .nav-list.top-menu.responsive .nav-list-item{
+  .top-nav .nav-list.top-menu.responsive {
+    background-color: white;
     display: block;
-    font-size: 2em;
+    position: absolute;
+    width: 75%;
+    z-index: 1;
+    top: 0;
+    right:0;
+  }
+
+  .top-nav .nav-list.top-menu.responsive .nav-list-item{
+    display: block;
     margin-top: 1em;
     margin-bottom: 1em;
   }
-
-  /* Formation */
-  .formation-time-period{
-    font-size: 0.5em;
-  }
-
-  .formation-description{
-    font-size: 0.5em;
-  }
-
-  /* Projects */
-
-  .project-title{
-    font-size: 1em;
-  }
-
-  .project-coordinator-name{
-    font-size: 0.7em;
-  }
-
-  .project-description {
-    font-size: 1em;
-  }
-
-  /* Publications */
-  .publication-title {
-     font-size: 1em;
-  }
-
-  .publication-authors-names{
-    font-size: 0.7em;
-  }
-
-  .publication-description {
-    font-size: 1em;
-  }
-
-  /* Languages */
-
-  /* Footer */
-  
-  footer nav{
-    padding-top:5%;
-  }
-
-} 
-
-/*Tablets portrait and Desktop*/
-@media  screen and (min-width: 1000px){
-
-    /*Top nav menu*/
-    #responsive-bars{
-      display: none;
-    }
-
-    .top-nav{
-      height: 5em;
-      overflow: hidden;
-    }
-
-    .app-name{
-      font-size: 3em;
-      float:left;
-    }
-
-    .top-menu{
-      float:right;
-      justify-content: space-between;
-      margin-top: 2.5%;
-      margin-right:2%;
-    }
-
-    .nav-list{
-      width: 70%;
-      background-color: none;
-    }
-
-    .top-menu .nav-list-item{
-      margin-left: 5%;
-    }
-
-    .top-nav li.nav-list-item{
-      display: block;
-    }
-
-    /*About-me section*/
-    #about-me-section{
-      background-size: 100vmax;
-      background-position-y: center;
-      background-position-x: center;
-    }
-
-    #about-me-section img{
-      width: 10%;
-      margin-top: 10%;
-    }
-
-    #greetings{
-      font-size: 5em;
-    }
-
-    #about-me-description{
-      font-size: 2em;
-    }
-
-    /* Section containers */    
-    section[id*='-section']{
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-    }
-
-    .section-title{
-      margin-bottom: 1.5em;
-    }
-
-    /* Projects */
-
-    .project-title{
-      font-size: 2em;
-    }
-
-    .project-coordinator-name{
-      font-size: 1em;
-    }
-
-    .project-description{
-      font-size: 1.3em;
-    }
-
-    .project-container{
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
-
-
-    /* Publications */
-
-    .publication-title{
-      font-size: 1.5em; 
-    }
-
-    .publication-authors-names{
-      font-size: 0.7em;
-    }
-    
-
-    .publication-description{
-      font-size: 1.6em;
-    }
-
-    .publication-container{
-      margin-top: 2.5em;
-      margin-bottom: 2.5em;
-    }
-
-
-    /* Footer */
-    footer{
-      height: 20em;
-    }
-
-    footer .my-email{
-      font-size:2.5em;
-    }
-
-    footer nav{
-      padding-top: 7%;
-    }
-
-    footer .nav-list-item img{
-      width: 3em;
-      height: 3em;
-    }
-
 }
