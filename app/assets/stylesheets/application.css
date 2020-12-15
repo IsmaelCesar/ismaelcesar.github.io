@@ -154,8 +154,12 @@
   #programming-languages-section ul li{
     background-color: blueviolet;
     text-align: center;
+    margin-left:2%; 
+    margin-right: 2%;
     transition: background-color 0.5s;
   }
+
+  /*  Programming Languages Section */
 
   #programming-languages-section ul li:hover{
     background-color: crimson;
@@ -372,12 +376,10 @@
       margin-top: 0;
     }
 
-    /*  Programming Languages Section */
+    /* Programming Languages Section */
     #programming-languages-section ul li{
       padding: 5px;
-      padding-bottom: 0;
-      margin-left:2%; 
-      margin-right: 2%;
+      padding-bottom: 0;    
       border-radius: 5px;
       -o-border-radius: 5px;
       -moz-border-radius: 5px; 
@@ -415,34 +417,33 @@
 
  }
 
-/* Phones portrait*/
-@media only screen and (min-width: 600px){
+
+
+/* Tablets portrait */
+@media only screen and (max-width: 900px){
+  /*Defining the formatting of a nav-list item before being responsive*/
   .app-name {
     font-size: 2em;
   }
+
   /* Configuring top menu */
-    /*Icon list item decoration*/
-    a.icon{
-      text-decoration: none;
-      font-size: 1em;
-      display: inline-block;
-      position: absolute;
-      top: 0; 
-      right: 0;
-      color: black;
-      padding: 1em 1em;
-    }
+  /*Icon list item decoration*/
+  a.icon{
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    color: black;
+    padding: 1em 1em;
+  }
 
-    a.icon:active{
-      color:white;
-      background-color: black;
-    }
+  a.icon:active{
+    color:white;
+    background-color: black;
+  }
 
-  /* About-me */
-}
-
-/* Tablets portrait */
-@media only screen and (min-width: 900px){
   /*Defining the formatting of a nav-list item before being responsive*/
   .top-nav{
     height: 3.5em;
@@ -457,7 +458,7 @@
     margin-bottom: 30px;
   }
 
-  .top-nav .nav-list.top-menu.responsive {
+  .nav-list.top-menu.responsive {
     background-color: white;
     display: block;
     position: absolute;
@@ -467,9 +468,20 @@
     right:0;
   }
 
-  .top-nav .nav-list.top-menu.responsive .nav-list-item{
+  .nav-list.top-menu.responsive .nav-list-item{
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
+  /* Programming Languages Section */
+  #programming-languages-section ul li{
+    padding: 5px;
+    padding-bottom: 0;    
+    border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+  }
+  
 }
