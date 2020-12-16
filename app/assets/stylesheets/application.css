@@ -88,7 +88,7 @@
   }
 
   #about-me-content{
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .75);
     top:0;
     right: 0; 
     bottom: 0;
@@ -531,6 +531,30 @@
 
   footer nav .footer-logo{
     width: 25%;
+  }
+
+}
+
+/* Tablet portrait and desktops */
+@media only screen and (min-width: 1000px){
+  
+  /* Top menu */
+  .top-nav{
+    height: 6em;
+  }
+
+  .app-name{
+    float:left;
+    font-size: 3em;
+  }
+
+  #top-menu{
+    float: right;
+    font-size: 1em;
+  }
+
+  #top-menu .nav-list-item{
+    margin-left: 5em;
   }
 
 }
