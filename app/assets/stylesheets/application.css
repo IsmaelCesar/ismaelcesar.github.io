@@ -87,6 +87,16 @@
     margin-right: 0;
   }
 
+  #about-me-content{
+    background-color: rgba(255, 255, 255, .7);
+    top:0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   #greetings, #about-me-description{
     font-family: 'PoiretOne';
   }
@@ -263,9 +273,12 @@
  /*=================*/
 
  .footer-menu{
+  display: flex;
   justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
   width: 80%;
-  margin:auto
+  margin:auto;
  }
 
  footer{ 
@@ -282,6 +295,10 @@
    width: 80%; 
    margin:auto;
  }
+
+  footer nav ul{
+    padding-top: 0.5em;
+  }
 
  a.icon{
    display: none;
@@ -411,10 +428,6 @@
       display: block;
     }
 
-    .footer-logo{
-      width: 1em;
-    }
-
  }
 
 
@@ -474,6 +487,25 @@
     margin-bottom: 1em;
   }
 
+  /* About-me section */
+  #about-me-section img{
+    margin-top: 10em;
+    width: 20%;
+  }
+
+  #greetings{
+    font-size: 3em;
+  }
+
+  #about-me-description{
+    font-size: 1.5em;
+  }
+
+  #about-me-section{
+    background-size: 100vh;
+    background-position: center;
+  }
+
   /* Programming Languages Section */
   #programming-languages-section ul li{
     padding: 5px;
@@ -483,5 +515,22 @@
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px; 
   }
+
+  /* Footer Section */
+  footer{
+    height: 15em;
+  }
+
+  footer nav{
+    padding-top:5em;
+  }
   
+  footer nav li.nav-list-item{
+    text-align: center;
+  }
+
+  footer nav .footer-logo{
+    width: 25%;
+  }
+
 }

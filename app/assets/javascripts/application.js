@@ -53,7 +53,6 @@ $(document).ready(() => {
   });
 
   window.onscroll = ()=>{
-    console.log();
     // Setting responsive screen only for mobile devices
     let top_nav_element = document.querySelector('.top-nav');
     if( window.pageYOffset > 0) {
