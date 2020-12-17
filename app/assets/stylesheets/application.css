@@ -12,6 +12,13 @@
  *= require font-awesome
  *= require_tree .
  *= require_self
+
+  Colors: 
+  #1D004F
+  #6417E8
+    primary: #39009C
+  #4F4B00
+  #9C9400
  */
 
  html, body{
@@ -267,7 +274,17 @@
  /* Language elements*/
   .language-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .language-item{
+    display: flex;
+    justify-content: left;
+  }
+
+  .language-container .language-name{
+    text-align: left;
   }
 
  /*=================*/
@@ -429,9 +446,7 @@
 
  }
 
-
-
-/* Tablets portrait */
+/* Phone and Tablets portrait */
 @media only screen and (max-width: 900px){
   /*Defining the formatting of a nav-list item before being responsive*/
   .app-name {
@@ -489,17 +504,17 @@
   /* About-me section */
   #about-me-section img{
     margin-top: 5em;
-    width: 20%;
+    width: 10%;
   }
 
   #greetings{
-    font-size: 3em;
-    margin-top: 2em;
+    font-size: 2em;
+    margin-top: 1em;
     margin-bottom: 1em;
   }
 
   #about-me-description{
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   #about-me-section{
@@ -515,6 +530,24 @@
     -o-border-radius: 5px;
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px; 
+  }
+
+  /*Publications section*/
+  .publication-container{
+    border: 1px solid #39009C;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transition: background-color 0.5, color 0.5;
+  }
+
+  .publication-container:active{
+    background-color: #39009C;
+    color: white;
   }
 
   /* Footer Section */
@@ -542,6 +575,7 @@
   /* Top menu */
   .top-nav{
     height: 6em;
+    z-index: 2;
   }
 
   .app-name{
@@ -585,10 +619,44 @@
   }
 
   #about-me-section #about-me-description{
-    font-size: 2em
+    font-size: 2em;
   }
 
-  /* Programmin languages Section */
+  /* Publications Section */
+  #publication-set{
+    width: 100%;
+  }
+  .publication-container{
+    width: 5em;
+    z-index: 0;
+    background-color: white;
+    color: black;
+    transform: scale3d(1,1,1);
+    border: 1px solid #39009C;
+    padding: 10px;
+    border-radius: 10px;
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+  }
+
+  .publication-container:hover{
+    z-index: 1;
+    background-color: #39009C;
+    color: white; 
+    transform: scale3d(1.3,1.3,10);
+  }
+
+  .publication-title{
+    font-size: 1.7em;
+  }
+
+  .publication-description{
+    font-size: 1.2em
+  }
+
+  /* Programming languages Section */
   #programming-languages-section ul li{
     padding: 10px;
     border-radius: 10px; 
