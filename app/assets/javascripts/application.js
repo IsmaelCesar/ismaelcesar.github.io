@@ -19,26 +19,33 @@
 //= require_tree .
 
 $(document).ready(() => {
+  
+  
   function swapTopNavResponsive(){
-    let top_nav = document.querySelector("#top-menu");
-    if(top_nav.className === 'nav-list top-menu' ){
-      top_nav.className += ' responsive';
-    }
-    else{
-      top_nav.className = 'nav-list top-menu';
+    if(window.outerWidth < 1000){
+      let top_nav = document.querySelector("#top-menu");
+      if(top_nav.className === 'nav-list top-menu' ){
+        top_nav.className += ' responsive';
+      }
+      else{
+        top_nav.className = 'nav-list top-menu';
+      }
     }
   }
 
   function swapOverlayDisplay(){
-    if( $('#overlay').css('display') !== 'none' ){
-      $('#overlay').css('display', 'none'); 
-    } 
-    else{
-      $('#overlay').css('display', 'block');
+    if(window.outerWidth < 1000){
+      if( $('#overlay').css('display') !== 'none' ){
+        $('#overlay').css('display', 'none'); 
+      } 
+      else{
+        $('#overlay').css('display', 'block');
+      }
     }
   }
-  
+
   if( window.outerWidth < 1000 ){
+       
     let responsive_bars = document.querySelector("#responsive-bars");
 
     $(responsive_bars).click(()=>{

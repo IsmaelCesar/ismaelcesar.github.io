@@ -38,4 +38,8 @@ en:
     languages: 'Languages'
     programming_languages: 'Programming Languages'
     other_skills: 'Other skills'
+  section:
+    about_me:
+      greetings: "Hi, I'm Ismael Cesar"
+      description: "I'm a webdeveloper, computer scientist passionate about learning new things and bringing value to other people"
 
