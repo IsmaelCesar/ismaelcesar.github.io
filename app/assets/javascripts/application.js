@@ -85,8 +85,6 @@ $(document).ready(() => {
           deslocamento -= 130;
         }
 
-        console.log("Deslocamento: ", deslocamento);
-
         event.preventDefault();
         $('html, body').animate({
                                   scrollTop: deslocamento
