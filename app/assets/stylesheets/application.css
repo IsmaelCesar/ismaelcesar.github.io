@@ -146,6 +146,30 @@
     text-align: justify;
   }
 
+  #projects-section .project-container{
+    border: 1px solid #cfcfcf;
+    background-color: white;
+    padding: 1.2em;
+    border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    transition: background-color 0.5s;
+  }
+
+  #projects-section .project-container .project-title{
+    background-color: #1D004F;
+    color: white; 
+    padding: 0.5em;
+    border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+  }
+
+  #projects-section .project-container:hover{
+    background-color: #cfcfcf;
+  }
 
   /* Publicatoins */
   #publication-set{
@@ -155,16 +179,27 @@
     align-content: center;
   }
 
-  #publication-set .publication-source .publication-container{
+  a.publication-source{
+    text-decoration: none;
+    display: block;
+  }
+
+  .publication-container .publication-title{
+    background-color: #1D004F;
+    color: white;
+    padding:0.5em;
+    border-radius: 0.2em; 
+    -o-border-radius: 0.2em; 
+    -moz-border-radius: 0.2em; 
+    -webkit-border-radius: 0.2em; 
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+
+  #publication-set a.publication-source{
     margin-left: 1em;
     margin-right: 1em;
     width: 20em;
-    text-decoration: none;
-  }
-
-  .publication-source{
-    text-decoration: none;
-    display: block;
   }
 
   /* Programming Languages  Section */
@@ -278,9 +313,8 @@
  /* Project Elements*/
 
  /* Publication Elements*/
- div[class*='-container']{
-   margin-top: 3em;
- }
+
+
  /* Language elements*/
  #languages-wrapper{
   display: flex;
@@ -366,6 +400,15 @@
   background-color: rgba(0, 0, 0, .5);
   z-index: 0;
   cursor: pointer;
+ }
+
+ div[class*='-container']{
+    margin-top: 3em;
+    margin-bottom: 3em;
+  } 
+
+ .section-title{
+   margin-bottom: 2em;
  }
 
  /* mobile sizes*/
@@ -569,20 +612,25 @@
 
   /*Publications section*/
   .publication-container{
-    border: 1px solid #39009C;
+    border: 1px solid #cfcfcf;
     background-color: white;
     color: black;
     padding: 10px;
-    border-radius: 10px;
-    -o-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
     transition: background-color 0.5, color 0.5;
   }
 
   .publication-container:active{
     background-color: #39009C;
     color: white;
+  }
+
+  .publication-container:active .publication-title{
+    color: black;
+    background-color: white;
   }
 
   /* Footer Section */
@@ -662,24 +710,23 @@
   #publication-set{
     width: 100%;
   }
-  .publication-container{
+  a.publication-source{
     width: 5em;
     z-index: 0;
-    text-decoration: none;
     background-color: white;
     color: black;
     transform: scale3d(1,1,1);
-    border: 1px solid #39009C;
+    border: 1px solid #cfcfcf;
     padding: 10px;
-    border-radius: 10px;
-    -o-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    border-radius: 0.2em;
+    -o-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
     transition: background-color 0.5s, color 0.5s, transform 0.5s;
   }
 
-  .publication-container:hover{
-    z-index: 3;
+  a.publication-source:hover {
+    z-index: 1;
     background-color: #39009C;
     color: white; 
     transform: scale3d(1.3,1.3,10);
@@ -691,6 +738,11 @@
 
   .publication-description{
     font-size: 1.2em
+  }
+
+  .publication-container:hover .publication-title{
+    color: black;
+    background-color: white;
   }
 
   /* Programming languages Section */
