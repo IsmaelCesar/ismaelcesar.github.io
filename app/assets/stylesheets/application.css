@@ -99,7 +99,7 @@
   }
 
   #about-me-content{
-    background-color: rgba(255, 255, 255, .50);
+    background-color: rgba(255, 255, 255, 0.65);
     top:0;
     right: 0; 
     bottom: 0;
@@ -173,7 +173,7 @@
   }
 
   #programming-languages-section ul li{
-    background-color: blueviolet;
+    background-color: #1D004F;
     text-align: center;
     margin-left:2%; 
     margin-right: 2%;

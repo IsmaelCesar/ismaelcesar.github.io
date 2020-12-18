@@ -72,16 +72,26 @@ $(document).ready(() => {
     }
   }
 
+  
+
   document.querySelectorAll('a.top-nav-link').forEach((element, index)=>{    
     $(element).click((event)=>{ 
       if(element.hash != ""){
-        let hash = element.hash 
-        deslocamento = $(hash).offset().top - $('.top-nav').height();
+        let hash = element.hash;
+
+        deslocamento = Math.abs($(hash).offset().top - $('.top-nav').height());
+
+        if($(window).scrollTop() === 0 ){
+          deslocamento -= 130;
+        }
+
+        console.log("Deslocamento: ", deslocamento);
+
         event.preventDefault();
         $('html, body').animate({
                                   scrollTop: deslocamento
                                 }, 
-                                800,
+                                1000,
                                  function(){
                                       window.scrollY = deslocamento; 
                                   }); 
