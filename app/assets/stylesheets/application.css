@@ -64,6 +64,10 @@
      font-family: 'Raleway-Italic'
   }
 
+  .top-nav{
+    z-index: 3;
+  }
+
   .app-name, a#class-name-link{
     font-family: 'PoiretOne';
     color: black; 
@@ -272,20 +276,45 @@
    margin-top: 3em;
  }
  /* Language elements*/
-  .language-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-  }
+ #languages-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+ }
 
-  .language-item{
-    display: flex;
-    justify-content: left;
-  }
+ .language-item{
+   box-sizing: border-box;
+   background-color: white;
+   transition: background-color 0.3s;
+ }
+ 
+ .language-item .language-level{
+   height: fit-content;
+   width: fit-content;
+   margin: 1em auto;
+ }
 
-  .language-container .language-name{
-    text-align: left;
-  }
+ .language-item .language-level #language-native{
+   margin: 2em auto;
+ }
+
+ .language-item:hover{
+   background-color: #cfcfcf;
+ }
+
+ .language-item .card-title{
+   background-color: #1D004F;
+   font-family:'Raleway-Bold' ;
+   padding: 1.2em ;
+   border-radius: 10px;
+   color:white;
+   margin: 0;
+ }
+
+ .language-item .card-title .language-name{
+   height: fit-content;
+   margin: auto;
+ }
 
  /*=================*/
 
@@ -503,8 +532,8 @@
 
   /* About-me section */
   #about-me-section img{
-    margin-top: 5em;
-    width: 10%;
+    margin-top: 3em;
+    width: 15%;
   }
 
   #greetings{
@@ -518,7 +547,7 @@
   }
 
   #about-me-section{
-    background-size: 100%;
+    background-size: 65em;
     background-position: center;
   }
 
@@ -575,6 +604,7 @@
   /* Top menu */
   .top-nav{
     height: 6em;
+    overflow: hidden;
     z-index: 2;
   }
 
