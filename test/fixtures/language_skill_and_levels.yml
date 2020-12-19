@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  language: one
+  language_skill: one
+  language_skill_level: one
+
+two:
+  language: two
+  language_skill: two
+  language_skill_level: two

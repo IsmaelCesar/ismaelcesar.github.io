@@ -1,0 +1,29 @@
+<section id="languages-section">
+  <h1 class="section-title"> <%= I18n.t('site_sections.languages') %></h1>
+  <div id="languages-wrapper">
+    <% languages.each do |language| %>
+      <div class="language-container card">
+        <div class="language-item card-body">
+          <div class="card-title">
+            <h5 class="language-name">
+              <%= language.name.capitalize %>
+            </h5>
+          </div>
+          <div class="language-level card-text">
+            <% if language.is_native %>
+              <p id="language-native"> Native speaker </p>
+            <% else %>
+              <p>
+                <ul>
+                  <% language.language_skills.zip(language.language_skill_levels).each do |l_skill, l_skill_level| %>
+                    <li> <%= l_skill.skill_type.capitalize %>: <%= l_skill_level.skill_level_type.capitalize %></li>
+                  <% end %>
+                </ul>
+              </p>
+            <% end  %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

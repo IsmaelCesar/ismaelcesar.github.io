@@ -1,0 +1,13 @@
+'pt-BR':
+  app_name: 'Ismael Cesar'
+  site_sections: 
+    formation: 'Formação'
+    projects: 'Projetos'  
+    publications: 'Publicações'
+    languages: 'Idiomas'
+    programming_languages: 'Linguagens de Programação'
+    other_skills: 'Outras habilidades'
+  section:
+    about_me:
+      greetings: "Olá, sou Ismael Cesar"
+      description: "Desenvolvedor web, cientista da computação apaixonado por aprender coisas novas e agregar valor as outras pessoas"

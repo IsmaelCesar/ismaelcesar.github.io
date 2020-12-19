@@ -1,0 +1,26 @@
+
+
+.programming-lang-logo {
+  width: 30%;
+  height: 30%; 
+}
+
+.programming-lang-logo, i.lang-ruby {
+  content:  url("programming-languages-logos/src/ruby/ruby.svg");
+}
+
+.programming-lang-logo, i.lang-python {
+  content:  url("programming-languages-logos/src/python/python.svg");
+}
+
+.programming-lang-logo, i.lang-c {
+  content:  url("programming-languages-logos/src/c/c.svg");
+}
+
+.programming-lang-logo, i.lang-java {
+  content:  url("programming-languages-logos/src/java/java.svg");
+}
+
+.programming-lang-logo, i.lang-javascript {
+  content:  url("programming-languages-logos/src/javascript/javascript.svg");
+}
