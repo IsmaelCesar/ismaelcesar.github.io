@@ -202,6 +202,11 @@
     width: 20em;
   }
 
+  /* Publicatoin Section */
+  .publication-container{
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
   /* Programming Languages  Section */
 
   #programming-languages-section ul{
@@ -698,7 +703,7 @@
 
   #about-me-section #greetings{
     font-size: 5em;
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-bottom: 0.5em; 
   }
 
