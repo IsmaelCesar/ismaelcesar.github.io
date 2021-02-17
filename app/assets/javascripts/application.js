@@ -45,7 +45,6 @@ $(document).ready(() => {
   }
 
   if( window.outerWidth < 1000 ){
-       
     let responsive_bars = document.querySelector("#responsive-bars");
 
     $(responsive_bars).click(()=>{
