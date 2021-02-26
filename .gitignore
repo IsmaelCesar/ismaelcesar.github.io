@@ -29,7 +29,7 @@
 /config/application.yml
 /config/secrets.yml
 /config/database.yml
-.public/*
+public/*
 # Ignoring sqlite's DB
 website_ismael_dev
 website_ismael_test
