@@ -28,27 +28,27 @@
   /*Configuring and defining font families*/
   @font-face {
     font-family: 'PoiretOne'; 
-    src: url('PoiretOne-Regular.woff');
-  }
+    src: url(<%= asset_path 'PoiretOne-Regular.woff' %>);
+  } 
 
   @font-face { 
     font-family: 'Raleway-Regular'; 
-    src: url('Raleway/Raleway-Regular.ttf')
+    src: url(<%= asset_path 'Raleway/Raleway-Regular.ttf' %>)
   }
 
   @font-face { 
     font-family: 'Raleway-Italic'; 
-    src: url('Raleway/Raleway-Italic.ttf')
+    src: url(<%= asset_path 'Raleway/Raleway-Italic.ttf' %>)
   }
 
   @font-face{
     font-family: 'Raleway-Bold'; 
-    src: url('Raleway/Raleway-Bold.ttf')
+    src: url(<%= asset_path 'Raleway/Raleway-Bold.ttf'  %>)
   }
 
   @font-face { 
     font-family: 'button-text'; 
-    src: url('Raleway/Raleway-Thin.ttf')
+    src: url( <%= asset_path 'Raleway/Raleway-Thin.ttf' %>)
   }
 
 
