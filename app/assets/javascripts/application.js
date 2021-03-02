@@ -17,6 +17,7 @@
 //= require popper
 //= require bootstrap
 //= require_tree .
+//= require_self
 
 $(document).ready(() => {
   
