@@ -33,3 +33,6 @@ public/*
 # Ignoring sqlite's DB
 website_ismael_dev
 website_ismael_test
+
+# Ignoring bundled gems for production
+vendor/bundle/*

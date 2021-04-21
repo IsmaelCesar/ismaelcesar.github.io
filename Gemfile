@@ -80,3 +80,7 @@ gem 'jquery-rails'
 gem 'bootstrap'
 
 gem 'rails-i18n', '~> 5.1', '>= 5.1.3'
+
+# Gems for printing a PDF curriculum
+gem 'wicked_pdf', '~> 2.1'
+gem 'wkhtmltopdf-binary', '~> 0.12.6.5'
