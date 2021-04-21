@@ -7,7 +7,11 @@
     languages: 'Idiomas'
     programming_languages: 'Linguagens de Programação'
     other_skills: 'Outras habilidades'
+    curriculum: 'Currículo'
   section:
     about_me:
       greetings: "Olá, sou Ismael Cesar"
       description: "Desenvolvedor web, cientista da computação apaixonado por aprender coisas novas e agregar valor as outras pessoas"
+  curriculum:
+    contacts: 'Contatos'
+    phone: 'Telefone'

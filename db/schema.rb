@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_12_18_165449) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -36,9 +39,9 @@ ActiveRecord::Schema.define(version: 2020_12_18_165449) do
   end
 
   create_table "language_skill_and_levels", force: :cascade do |t|
-    t.integer "language_id"
-    t.integer "language_skill_id"
-    t.integer "language_skill_level_id"
+    t.bigint "language_id"
+    t.bigint "language_skill_id"
+    t.bigint "language_skill_level_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["language_id"], name: "index_language_skill_and_levels_on_language_id"
@@ -68,15 +71,15 @@ ActiveRecord::Schema.define(version: 2020_12_18_165449) do
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.string "description"
-    t.integer "coordinator_id"
+    t.bigint "coordinator_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["coordinator_id"], name: "index_projects_on_coordinator_id"
   end
 
   create_table "publication_authors", force: :cascade do |t|
-    t.integer "publication_id"
-    t.integer "author_id"
+    t.bigint "publication_id"
+    t.bigint "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_publication_authors_on_author_id"
@@ -91,4 +94,10 @@ ActiveRecord::Schema.define(version: 2020_12_18_165449) do
     t.string "source"
   end
 
+  add_foreign_key "language_skill_and_levels", "language_skill_levels"
+  add_foreign_key "language_skill_and_levels", "language_skills"
+  add_foreign_key "language_skill_and_levels", "languages"
+  add_foreign_key "projects", "coordinators"
+  add_foreign_key "publication_authors", "authors"
+  add_foreign_key "publication_authors", "publications"
 end
