@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Curriculum - Ismael Cesar</title>
+        <meta charset="utf-8">
+        <style>
+            @font-face {
+                font-family: 'PoiretOne'; 
+                src: url(<%= wicked_pdf_asset_base64 'PoiretOne-Regular.woff' %>);
+            } 
+
+            @font-face { 
+                font-family: 'Raleway-Regular'; 
+                src: url(<%= wicked_pdf_asset_base64 'Raleway/Raleway-Regular.ttf' %>)
+            }
+
+            @font-face { 
+                font-family: 'Raleway-Italic'; 
+                src: url(<%= wicked_pdf_asset_base64 'Raleway/Raleway-Italic.ttf' %>)
+            }
+
+            @font-face{
+                font-family: 'Raleway-Bold'; 
+                src: url(<%= wicked_pdf_asset_base64 'Raleway/Raleway-Bold.ttf'  %>)
+            }
+
+            @font-face { 
+                font-family: 'button-text'; 
+                src: url( <%= wicked_pdf_asset_base64 'Raleway/Raleway-Thin.ttf' %>)
+            }
+
+
+            h1, h2, h3, h4, h5, strong {
+                font-family: 'Raleway-Bold';
+            }
+
+            p, a, li{
+                font-family: 'Raleway-Regular';
+            }
+
+            i, em {
+                font-family: 'Raleway-Italic'
+            }
+        </style>
+        <%= wicked_pdf_stylesheet_link_tag 'my_cv'%>
+        <%= wicked_pdf_stylesheet_link_tag 'curriculum'%>        
+    </head>
+    <body>
+        <div id="left-column">
+            <section id="picture">
+                <%= image_tag wicked_pdf_asset_base64('my_avatar.png')%>
+            </section>
+            <section>
+                <h3 class="section-title"> <%= I18n.t('curriculum.contacts') %> </h3>
+                <p>E-mail:</p>
+                <p>ismael.c.s.a@hotmail.com</p>
+                <p><%= I18n.t('curriculum.phone') %>:</p>
+                <p>+55 81 99880-9677</p>
+            </section>
+            <section>
+                <h3 class="section-title"> <%= I18n.t('site_sections.languages') %> </h3>
+                <% @languages.each do |language|%>
+                    <div>
+                        <%= language.name.capitalize %> <%= language.is_native ? '(Native)' : ''%>
+                        <ul class="custom-skill-list">
+                            <% language.language_skills.zip(language.language_skill_levels).each do |l_skill, l_skill_level| %>
+                                <li><%= l_skill.skill_type.capitalize %>: <%= l_skill_level.skill_level_type %></li>
+                            <% end  %>
+                        </ul>
+                    </div>
+                <% end %>
+            </section>
+            <section>
+                <h3 class="section-title"> <%= I18n.t('site_sections.programming_languages') %> </h3>
+                <ul class="custom-skill-list">
+                    <li>Ruby</li>
+                    <li>Python</li>
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+            <section>
+                <h3 class="section-title"> <%= I18n.t('site_sections.other_skills') %> </h3>
+                <ul class="additional-information">
+                    <li>Git</li>
+                    <li>Ruby on Rails</li>
+                    <li><strong> Databases </strong>
+                        <ul>
+                            <li>MySql</li>
+                            <li>Postgresql</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div id="right-column">
+            <section>
+                <h1 id="full-name">Ismael Cesar da Silva Araujo</h1>
+                <ul id="networking">
+                    <li>
+                        <%= image_tag wicked_pdf_asset_base64('github.png'), width: 20%>
+                        <%= link_to 'https://github.com/IsmaelCesar' do %>
+                            https://github.com/IsmaelCesar
+                        <% end %>
+                    </li>
+                    <li>
+                        <%= image_tag wicked_pdf_asset_base64('linkedin.png'), width: 20%>
+                        <%= link_to 'https://www.linkedin.com/in/ismael-cesar-11927146' do %>
+                            https://www.linkedin.com/in/ismael-cesar-11927146
+                        <% end %>
+                    </li>
+                    <li>
+                        <%= image_tag wicked_pdf_asset_base64('lattes.png'), width: 20%>
+                        <%= link_to 'http://lattes.cnpq.br/7125338940009959' do %>
+                            http://lattes.cnpq.br/7125338940009959
+                        <% end %>
+                    </li>
+                    <li>
+                        <%= image_tag wicked_pdf_asset_base64('researchgate.png'), width: 20%>
+                        <%= link_to 'https://www.researchgate.net/profile/Ismael_Araujo' do %>
+                            https://www.researchgate.net/profile/Ismael_Araujo
+                        <% end %>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="section-title"> <%= I18n.t('site_sections.formation') %> </h2>
+                <% @formations.each do |formation| %>
+                    <h3 class="section-subtitle">
+                        <strong>
+                        <%= formation.start.year %> -  <%= formation.finish.year %> 
+                        <% if formation.is_in_progress %> 
+                        <i> (in progress) </i>
+                        <% end %>
+                        </strong>
+                    </h3>
+                    <p> 
+                        <%= formation.degree %> degree in 
+                        <%= formation.field %>, at
+                        <%= formation.institution %>
+                    </p>
+                <% end %>
+            </section>
+            <section>
+                <h2 class="section-title"> <%= I18n.t('site_sections.projects') %> </h2>
+                <% @projects.each do |project| %>
+                    <div>
+                        <h3 class="section-subtitle"><strong><%= project.title %></strong></h3>
+                        <h5 class="additional-content"> Coordenador: <%= project.coordinator.name %></h5>
+                        <p><%= project.description %></p>
+                    </div>
+                <% end %>
+            </section>
+            <section>
+                <h2 class="section-title"> <%= I18n.t('site_sections.publications') %> </h2>
+                <% @publications.each do |publication| %>
+                    <div>
+                        <h3 class="section-subtitle"><strong><%= publication.title %></strong></h3>
+                        <div class="additional-content">
+                            <i><%= publication.authors.pluck(:name).join('; ') %></i>
+                            <p><%= publication.publication_place %></p>
+                        </div>
+                    </div>
+                <% end %>
+            </section>
+        </div>
+    </body>
+</html>
