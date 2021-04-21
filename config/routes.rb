@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root to: 'my_cv#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/curriculum', to: 'my_cv#curriculum', as: :curriculum
 end
