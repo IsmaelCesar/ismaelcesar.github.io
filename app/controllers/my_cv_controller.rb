@@ -5,12 +5,12 @@ class MyCvController < ApplicationController
   def index
   end
 
-  # [GET] Curriculum
+  # [GET] /cv
   # prints out the PDF version of my cv
-  def curriculum
+  def curriculum_vitae
     respond_to do |format|
       format.pdf do
-        render pdf: 'curriculum'
+        render pdf: 'curriculum_vitae'
       end
     end
   end

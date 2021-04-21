@@ -1,0 +1,89 @@
+/* This file is dedicated to the formating of the curriculum
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+}
+
+/* Section titls and subtitles*/
+
+.section-title{
+    font-size: 18pt; 
+}
+
+.section-subtitle{
+    font-size: 12pt;
+}
+
+    /*Publication configuration*/
+    .additional-content{
+        font-size: 8pt;        
+    }
+
+
+#left-column{
+    width: 14em;
+    float: left;
+    margin-right: 0;
+}
+
+#right-column{
+    width: 42em;
+    float: right;
+    margin-left: 0;
+    padding-left: 10px;
+    border-left: 2px dotted darkblue;
+}
+
+
+/* Right column content*/
+#full-name{
+    font-family: 'PoiretOne';
+    text-align: center;
+    font-size: 30pt;
+}
+
+#networking{
+    width: 75%;
+    margin: auto;
+}
+
+#right-column .section-title{
+    border-bottom: 1px dashed purple;
+}
+
+#right-column section{
+    margin-top: 1.5em;
+}
+
+/* left column content*/
+
+#left-column ul.custom-skill-list{
+    padding: 0;
+    width: 100%;
+}
+
+#left-column ul.custom-skill-list li{
+    word-wrap: normal;
+    font-size: 10pt;
+    text-align: center;
+}
+
+#left-column section{
+    border-top: 1px dashed purple;
+    margin-top: 1.5em;
+}
+
+#picture{
+    border-top: none;
+}
+
+#picture img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
