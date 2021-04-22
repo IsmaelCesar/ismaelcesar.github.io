@@ -5,9 +5,7 @@
       <a class="publication-source publication-container" href="<%= publication.source.blank? ? '#' : publication.source %>"> 
         <h5 class="publication-title"> <%= publication.title %> </h5>
         <p class="publication-authors-names"> 
-          <% publication.authors.each do |author| %>
-            <em> <%= author.name %>, </em>
-          <% end %>
+          <em><%= publication.authors.order(:author_order).pluck(:name).join('; ') %></em>
         </p>
         <p class="publication-description"> <%= publication.publication_place %> </p>        
       </a>

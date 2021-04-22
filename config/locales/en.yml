@@ -43,6 +43,7 @@ en:
     about_me:
       greetings: "Hi, I'm Ismael Cesar"
       description: "I'm a web developer, computer scientist passionate about learning new things and bringing value to other people"
+    where_to_find_me: 'Where to find me'
   curriculum:
       contacts: 'Contacts'
       phone: 'Phone number'
