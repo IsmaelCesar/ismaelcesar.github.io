@@ -12,6 +12,7 @@
     about_me:
       greetings: "Olá, sou Ismael Cesar"
       description: "Desenvolvedor web, cientista da computação apaixonado por aprender coisas novas e agregar valor as outras pessoas"
+    where_to_find_me: 'Onde me achar'
   curriculum:
     contacts: 'Contatos'
     phone: 'Telefone'

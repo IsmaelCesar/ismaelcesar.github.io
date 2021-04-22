@@ -15,7 +15,7 @@ authors = Author.create([{name: 'Araujo, I. C. S'},
                          {name: 'Araujo, R. S.'},
                          {name: 'Albarracin E., E. S.'},
                          {name: 'Duran A., Christian M.'},
-                         {name: 'Veras, T. M. L. de'}, 
+                         {name: 'Veras, T. M. L. de'},
                          {name: 'Park, D. K.'}])
 
 coordinator = Coordinator.create({name: 'Adenilton José da Silva'})
@@ -57,7 +57,7 @@ publications = Publication.create([{title: 'Quantum enhanced k-fold cross-valida
                                     publication_place: 'IEEE Transactions on Computers, 2020.',
                                     source: 'https://ieeexplore.ieee.org/iel7/12/4358213/09259210.pdf?casa_token=SXzWtrmlDqwAAAAA:6Zg9_eckXiZwiGb76xpovzQLfnYUMIBsydinmgpGgLaX6DgwnGCJFynGZIzuvCfYVUDL8Allaj7N'}])
 
-language_skill_and_levels = LanguageSkillAndLevel.create([{language: languages[0], 
+language_skill_and_levels = LanguageSkillAndLevel.create([{language: languages[0],
                                                            language_skill: language_skills[0],
                                                            language_skill_level: language_skill_level[2]},
                                                           {language: languages[0], 
@@ -90,23 +90,25 @@ projects = Project.create([{title: 'Quantum machine learning: models and learnin
                             coordinator: coordinator}])
 
 
-publication_authors = PublicationAuthor.create([{publication: publications[0], author: authors[2]},
-                                                {publication: publications[0], author: authors[0]},
-                                                {publication: publications[0], author: authors[1]},
-                                                {publication: publications[1], author: authors[0]},
-                                                {publication: publications[1], author: authors[3]},
-                                                {publication: publications[1], author: authors[1]},
-                                                {publication: publications[2], author: authors[2]},
-                                                {publication: publications[2], author: authors[5]},
-                                                {publication: publications[2], author: authors[0]},
-                                                {publication: publications[2], author: authors[1]},
-                                                {publication: publications[3], author: authors[0]},
-                                                {publication: publications[3], author: authors[1]},
-                                                {publication: publications[4], author: authors[3]},
-                                                {publication: publications[4], author: authors[0]},
-                                                {publication: publications[4], author: authors[6]},
-                                                {publication: publications[4], author: authors[1]},
-                                                {publication: publications[5], author: authors[4]},
-                                                {publication: publications[5], author: authors[0]},
-                                                {publication: publications[5], author: authors[8]},
-                                                {publication: publications[5], author: authors[1]}])
+publication_authors = PublicationAuthor.create([{publication: publications[0], author: authors[2], author_order: 1},
+                                                {publication: publications[0], author: authors[0], author_order: 2},
+                                                {publication: publications[0], author: authors[4], author_order: 3},
+                                                {publication: publications[0], author: authors[1], author_order: 4},
+                                                {publication: publications[1], author: authors[0], author_order: 1},
+                                                {publication: publications[1], author: authors[3], author_order: 2},
+                                                {publication: publications[1], author: authors[1], author_order: 3},
+                                                {publication: publications[2], author: authors[2], author_order: 1},
+                                                {publication: publications[2], author: authors[4], author_order: 2},
+                                                {publication: publications[2], author: authors[0], author_order: 3},
+                                                {publication: publications[2], author: authors[1], author_order: 4},
+                                                {publication: publications[3], author: authors[0], author_order: 1},
+                                                {publication: publications[3], author: authors[1], author_order: 2},
+                                                {publication: publications[4], author: authors[3], author_order: 1},
+                                                {publication: publications[4], author: authors[1], author_order: 2},
+                                                {publication: publications[4], author: authors[0], author_order: 3},
+                                                {publication: publications[4], author: authors[5], author_order: 5},
+                                                {publication: publications[4], author: authors[6], author_order: 6},
+                                                {publication: publications[5], author: authors[7], author_order: 1},
+                                                {publication: publications[5], author: authors[0], author_order: 2},
+                                                {publication: publications[5], author: authors[8], author_order: 3},
+                                                {publication: publications[5], author: authors[1], author_order: 4}])

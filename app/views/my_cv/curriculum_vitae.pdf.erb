@@ -158,7 +158,7 @@
                     <div>
                         <h3 class="section-subtitle"><strong><%= publication.title %></strong></h3>
                         <div class="additional-content">
-                            <i><%= publication.authors.pluck(:name).join('; ') %></i>
+                            <i><%= publication.authors.order(:author_order).pluck(:name).join('; ') %></i>
                             <p><%= publication.publication_place %></p>
                         </div>
                     </div>
