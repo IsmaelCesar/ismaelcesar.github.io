@@ -61,7 +61,7 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-group :production do 
+group :production, :development do 
   # Use postgresql as the database for Active Record
   gem 'pg', '>= 0.18', '< 2.0'
 end
