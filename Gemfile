@@ -86,3 +86,5 @@ gem 'rails-i18n', '~> 7.0', '>= 7.0.5'
 # Gems for printing a PDF curriculum
 gem 'wicked_pdf', '~> 2.6', '>= 2.6.3'
 gem 'wkhtmltopdf-binary', '~> 0.12.6.5'
+
+#see net-smtp
