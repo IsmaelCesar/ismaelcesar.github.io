@@ -1,7 +1,6 @@
 //////////////////////////////
 // Converts the input value to Base EMs
 //////////////////////////////
-
 @function breakpoint-to-base-em($value) {
   $value-unit: unit($value);
 
