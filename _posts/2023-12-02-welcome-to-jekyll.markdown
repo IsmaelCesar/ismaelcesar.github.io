@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title:  "Welcome to Jekyll!"
 date:   2023-12-02 19:50:43 -0300
 categories: jekyll update
@@ -29,4 +29,10 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-talk]: https://talk.jekyllrb.com/
 
 This is an example of equation:
-$|\psi\rangle = \sum_{i = 0}^{2^n - 1}  \sqrt(x_i)|i\rangle$
+\\( |\psi\rangle = \sum_{i = 0}^{2^n - 1}  \sqrt(x_i)|i\rangle \\)
+
+This is another equation example
+
+\\[
+  \int^a_b f(x) dx
+\\]
