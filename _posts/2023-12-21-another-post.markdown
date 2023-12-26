@@ -2,7 +2,7 @@
 layout: posts
 title: "Another Jekill Post"
 date: 2023-12-21 20:12:00 -0300
-categories: quantum computing
+categories: quantum-computing
 ---
 
 This is another test Jekill post to be presented in my website. 
