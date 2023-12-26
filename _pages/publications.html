@@ -4,25 +4,4 @@ title: Publications
 permalink: /publications/
 ---
 
-{% assign authors = site.data.publications.authors %}
-
-<div class="entries-list">
-    {% for publication in site.data.publications.articles %}
-        <div class="list__item">
-            <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-                <h3 class="archive__item-title no_toc" itemprop="headline">
-                    <a href="{{ publication.url }}" target="_blank">{{ publication.title }}</a>
-                </h3>
-            </article>
-            <!-- Author list-->
-            <div style="font-size: 16pt;">
-                {% if publication.author_list %}
-                {% for author_key in publication.author_list %}
-                <span> {{ authors[author_key].acronym }} </span>; 
-                {% endfor %}
-                {% endif %}
-            </div>
-            <em style="font-size: 12pt;">{{ publication.publication_place }}</em>
-        </div>
-    {% endfor %}
-</div>
+{% include custom/publications_list.html %}
