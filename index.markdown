@@ -4,4 +4,3 @@
 
 layout: splash
 ---
-# Welcome to my Website
