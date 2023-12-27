@@ -1,7 +1,7 @@
 
 {% assign authors = site.data.publications.authors %}
 
-<div class="entries-grid">
+<div class="entries-list">
     {% assign authors = site.data.publications.authors %}
     {% assign articles = site.data.publications.articles | sort: 'publication_year' | reverse %}
     {% assign total_items = include.total_items | articles.size %}
