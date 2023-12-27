@@ -1,0 +1,27 @@
+
+{% assign authors = site.data.publications.authors %}
+
+<div class="entries-list">
+    {% assign authors = site.data.publications.authors %}
+    {% assign articles = site.data.publications.articles | sort: 'publication_year' | reverse %}
+    {% assign total_items = include.total_items | articles.size %}
+
+    {% for publication in articles limit: total_items %}
+        <div class="list__item">
+            <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                <h3 class="archive__item-title no_toc" itemprop="headline">
+                    <a href="{{ publication.url }}" target="_blank">{{ publication.title }}</a>
+                </h3>
+            </article>
+            <!-- Author list-->
+            <div style="font-size: 16pt;">
+                {% if publication.author_list %}
+                {% for author_key in publication.author_list %}
+                <span> {{ authors[author_key].acronym }} </span>; 
+                {% endfor %}
+                {% endif %}
+            </div>
+            <em style="font-size: 12pt;">{{ publication.publication_place }}</em>
+        </div>
+    {% endfor %}
+</div>

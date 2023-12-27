@@ -24,7 +24,7 @@ title                    : "Ismael Cesar"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Ismael Cesar"
 title_separator          : "-"
-email                    : leamscesar@gmail.com
+email                    : icsa@cin.ufpe.br
 description: >- # this means to ignore newlines until "baseurl:"
    My base website and portfolio
 #  Write an awesome description for your new site here. You can edit this
@@ -40,7 +40,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -117,14 +117,14 @@ analytics:
 # Site Author
 author:
   name             : "Ismael Cesar"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/20230224_me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a Phd. Student at Federal University of Pernambuco"
   location         : "Recife, Pernambuco - Brazil"
-  email            : "leamscesar@gmail.com"
+  email            : "icsa@cin.ufpe.br"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      #url: "mailto:icsa@cin.ufpe.br"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -136,10 +136,13 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/IsmaelCesar"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "Linked-in"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ismael-cesar-11927146/"
 
 # Site Footer
 footer:
@@ -347,6 +350,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      show_date: true
+      toc: true

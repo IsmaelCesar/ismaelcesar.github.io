@@ -16,7 +16,11 @@ authors = Author.create([{name: 'Araujo, I. C. S'},
                          {name: 'Albarracin E., E. S.'},
                          {name: 'Duran A., Christian M.'},
                          {name: 'Veras, T. M. L. de'},
-                         {name: 'Park, D. K.'}])
+                         {name: 'Park, D. K.'},
+                         {name: 'Blank, C.'}, 
+                         {name: 'Vale, R.'},
+                         {name: 'Azevedo, T. M. D.'},
+                         {name: 'Araujo, I. F.'}])
 
 coordinator = Coordinator.create({name: 'Adenilton José da Silva'})
 

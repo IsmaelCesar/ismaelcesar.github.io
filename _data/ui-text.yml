@@ -50,6 +50,7 @@ en: &DEFAULT_EN
   search_algolia_no_results  : "No results"
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
+  publications               : "Publications"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -109,6 +110,7 @@ es: &DEFAULT_ES
   search_algolia_no_results  :
   results_found              : "resultado(s) encontrado(s)"
   back_to_top                : "Volver arriba"
+  publications               : "Publicaciones"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
@@ -164,6 +166,7 @@ fr: &DEFAULT_FR
   search_algolia_no_results  :
   results_found              : "Résultat(s) trouvé(s)"
   back_to_top                : "Retour en haut"
+  publications               : "Publications"
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
@@ -268,6 +271,7 @@ pt: &DEFAULT_PT
   loading_label              : "A carregar..."
   search_label_text          :
   search_algolia_no_results  :
+  publications               : "Publicações"
 pt-PT:
   <<: *DEFAULT_PT
 # Brazilian Portuguese
@@ -319,6 +323,7 @@ pt-BR:
   search_algolia_no_results  : "Nenhum resultado"
   results_found              : "Resultado(s) encontrado(s)"
   back_to_top                : "Voltar para o topo"
+  publications               : "Publicações"
 
 # Italian
 # -------
