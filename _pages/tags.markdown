@@ -1,4 +1,4 @@
 ---
-layout: tag
-permalink: /tag/:tag
+layout: tags
+permalink: /tags/
 ---
