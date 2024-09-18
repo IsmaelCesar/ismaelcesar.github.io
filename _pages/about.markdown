@@ -3,16 +3,27 @@ layout: single
 title: About
 permalink: /about/
 ---
+<div class="author__avatar">
+{% assign author = site.author %}
+<img src="{{author.avatar}}" alt="{{ author.name }}" itemprop="image" class="u-photo"/>
+</div>
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Ismael Cesar
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hello! I'm Ismael Cesar and I'm a Phd. student at Federal University of Pernambuco (UFPE, acronym in Portuguese).
+My current research interest are
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+- Quantum Computing 
+- Machine learning 
+- Artificial Inteligence
 
+Where can you find me: 
 
-[jekyll-organization]: https://github.com/jekyll
+<div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+    {% for link in author.links %}
+        {% if link.label and link.url %}
+            <a href="{{link.url}}" style="display: block;"><span class="{{link.icon}}"></span> <span>{{ link.label }}</span></a>
+        {% endif %}
+    {% endfor %}
+</div>
+
