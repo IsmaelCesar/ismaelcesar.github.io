@@ -4,10 +4,10 @@ main:
     url: /about/
   - title: "Publications"
     url: /publications/
-  - title: "Postagens"
-    url: /postagens/
-  - title: "Solutionaries"
-    url: /solutionaries/
+  # - title: "Postagens"
+  #   url: /postagens/
+  # - title: "Solutionaries"
+  #   url: /solutionaries/
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "Sample Posts"
