@@ -1,6 +1,6 @@
 ---
 title: Postagens
 layout: categories
-permalink: /postagens/
+permalink: /posts/
 author_profile: true
 ---
