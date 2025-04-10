@@ -40,7 +40,7 @@ layout: default
         <div class="list__recent_publications">
           <!-- class="masthead__menu-item" -->
           <h3 class="archive__subtitle">
-             <a href="/publications/">{{ site.data.ui-text[site.locale].publications | default: "Publications" }}</a>
+             <a href="{{ site.data.navigation.main[1].url }}">{{ site.data.ui-text[site.locale].publications | default: "Publications" }}</a>
           </h3>
           {% include custom/publications_list.html total_items=2 %}
         </div>

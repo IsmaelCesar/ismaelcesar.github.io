@@ -1,7 +1,7 @@
 ---
 layout: single
-title: About
-permalink: /about/
+title: About me
+permalink: /about-me/
 ---
 <div class="author__avatar">
 {% assign author = site.author %}
