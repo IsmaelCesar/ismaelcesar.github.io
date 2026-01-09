@@ -15,7 +15,7 @@ My current research interest are
 
 - Quantum Computing 
 - Machine learning 
-- Artificial Inteligence
+- Artificial Intelligence
 
 Where can you find me: 
 
