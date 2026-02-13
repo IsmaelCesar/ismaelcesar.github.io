@@ -22,7 +22,7 @@ Where can you find me:
 <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
     {% for link in author.links %}
         {% if link.label and link.url %}
-            <a href="{{link.url}}" style="display: block;"><span class="{{link.icon}}"></span> <span>{{ link.label }}</span></a>
+            <a href="{{link.url}}" style="display: block;" target="_blank"><span class="{{link.icon}}"></span> <span>{{ link.label }}</span></a>
         {% endif %}
     {% endfor %}
 </div>
